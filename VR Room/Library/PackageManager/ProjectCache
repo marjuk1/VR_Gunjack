@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638960078061279756
+      ticks: 638967525806562527
     m_Hash: 718874208
   m_LockFileStatus:
     m_FilePath: C:/Users/arnas/Desktop/VR_Gunjack/VR Room/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638960078061279756
+      ticks: 638967525806573813
     m_Hash: 2645004834
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -975,6 +975,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.11
     - 3.2.0-pre.12
     - 3.2.0-pre.13
+    - 3.2.0-pre.14
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     compatible:
@@ -994,6 +995,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.11
     - 3.2.0-pre.12
     - 3.2.0-pre.13
+    - 3.2.0-pre.14
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     recommended: 3.0.9
@@ -1348,13 +1350,15 @@ m_ResolvedPackages:
     - 1.9.6
     - 1.9.7
     - 1.9.8
+    - 1.9.9
     compatible:
     - 1.9.4
     - 1.9.5
     - 1.9.6
     - 1.9.7
     - 1.9.8
-    recommended: 1.9.8
+    - 1.9.9
+    recommended: 1.9.9
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -1484,6 +1488,8 @@ m_ResolvedPackages:
     - 3.2.0
     - 3.2.1
     - 3.3.0-pre.1
+    - 3.3.0
+    - 3.4.0-pre.1
     compatible:
     - 2.6.4
     - 2.6.5
@@ -1505,6 +1511,8 @@ m_ResolvedPackages:
     - 3.2.0
     - 3.2.1
     - 3.3.0-pre.1
+    - 3.3.0
+    - 3.4.0-pre.1
     recommended: 2.6.5
     deprecated: []
   dependencies:
@@ -1663,13 +1671,15 @@ m_ResolvedPackages:
     - 4.5.0
     - 4.5.1
     - 4.5.2
+    - 4.5.3
     compatible:
     - 4.4.0
     - 4.4.1
     - 4.5.0
     - 4.5.1
     - 4.5.2
-    recommended: 4.5.2
+    - 4.5.3
+    recommended: 4.5.3
     deprecated: []
   dependencies:
   - name: com.unity.modules.vr
@@ -1795,6 +1805,7 @@ m_ResolvedPackages:
     - 1.15.1
     - 1.16.0-pre.1
     - 1.16.0-pre.2
+    - 1.16.0
     compatible:
     - 1.14.3
     - 1.15.0-pre.1
@@ -1803,6 +1814,7 @@ m_ResolvedPackages:
     - 1.15.1
     - 1.16.0-pre.1
     - 1.16.0-pre.2
+    - 1.16.0
     recommended: 1.14.3
     deprecated: []
   dependencies:
@@ -4095,8 +4107,10 @@ m_ResolvedPackages:
     - 2.1.10
     - 2.1.11
     - 2.1.12
+    - 3.0.0
     compatible:
     - 2.1.12
+    - 3.0.0
     recommended: 2.1.12
     deprecated: []
   dependencies:
@@ -4970,10 +4984,12 @@ m_ResolvedPackages:
     - 4.9.1
     - 4.9.2
     - 4.9.3
+    - 4.9.4
     compatible:
     - 4.9.2
     - 4.9.3
-    recommended: 4.9.3
+    - 4.9.4
+    recommended: 4.9.4
     deprecated: []
   dependencies: []
   resolvedDependencies: []
