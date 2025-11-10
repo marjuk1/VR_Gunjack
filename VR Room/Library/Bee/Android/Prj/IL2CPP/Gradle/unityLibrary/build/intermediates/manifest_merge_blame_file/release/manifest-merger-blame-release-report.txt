@@ -1,0 +1,125 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.unity3d.player" >
+5
+6    <uses-sdk android:minSdkVersion="29" />
+6-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
+7
+8    <uses-feature
+8-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-90
+9        android:name="android.hardware.vulkan.version"
+9-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:17-63
+10        android:required="true" />
+10-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:64-87
+11    <uses-feature
+11-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:3-88
+12        android:name="android.hardware.touchscreen"
+12-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:17-60
+13        android:required="false" />
+13-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:61-85
+14    <uses-feature
+14-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:3-99
+15        android:name="android.hardware.touchscreen.multitouch"
+15-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:17-71
+16        android:required="false" />
+16-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:72-96
+17    <uses-feature
+17-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:3-108
+18        android:name="android.hardware.touchscreen.multitouch.distinct"
+18-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-80
+19        android:required="false" />
+19-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:81-105
+20
+21    <application
+21-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:3-23:17
+22        android:enableOnBackInvokedCallback="true"
+22-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:16-58
+23        android:extractNativeLibs="true" >
+23-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:59-91
+24        <meta-data
+24-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:5-69
+25            android:name="unity.splash-mode"
+25-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:16-48
+26            android:value="0" />
+26-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:49-66
+27        <meta-data
+27-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:5-74
+28            android:name="unity.splash-enable"
+28-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:16-50
+29            android:value="True" />
+29-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:51-71
+30        <meta-data
+30-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:5-78
+31            android:name="unity.launch-fullscreen"
+31-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:16-54
+32            android:value="True" />
+32-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:55-75
+33        <meta-data
+33-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:5-84
+34            android:name="unity.render-outside-safearea"
+34-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:16-60
+35            android:value="True" />
+35-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:61-81
+36        <meta-data
+36-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-81
+37            android:name="notch.config"
+37-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-43
+38            android:value="portrait|landscape" />
+38-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:44-78
+39        <meta-data
+39-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-84
+40            android:name="unity.auto-report-fully-drawn"
+40-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-60
+41            android:value="true" />
+41-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:61-81
+42
+43        <activity
+43-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-22:16
+44            android:name="com.unity3d.player.UnityPlayerActivity"
+44-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:15-68
+45            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+45-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:180-361
+46            android:exported="true"
+46-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:433-456
+47            android:hardwareAccelerated="false"
+47-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:397-432
+48            android:launchMode="singleTask"
+48-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:148-179
+49            android:resizeableActivity="false"
+49-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:362-396
+50            android:screenOrientation="fullUser"
+50-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:111-147
+51            android:theme="@style/UnityThemeSelector" >
+51-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:69-110
+52            <intent-filter>
+52-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:7-19:23
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:9-69
+53-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:19-66
+54
+55                <action android:name="android.intent.action.MAIN" />
+55-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:9-61
+55-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:17-58
+56
+57                <category android:name="com.oculus.intent.category.VR" />
+57-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:9-66
+57-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:19-63
+58            </intent-filter>
+59
+60            <meta-data
+60-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:7-82
+61                android:name="unityplayer.UnityActivity"
+61-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:18-58
+62                android:value="true" />
+62-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:59-79
+63            <meta-data
+63-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:7-70
+64                android:name="notch_support"
+64-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:18-46
+65                android:value="true" />
+65-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:47-67
+66        </activity>
+67    </application>
+68
+69</manifest>

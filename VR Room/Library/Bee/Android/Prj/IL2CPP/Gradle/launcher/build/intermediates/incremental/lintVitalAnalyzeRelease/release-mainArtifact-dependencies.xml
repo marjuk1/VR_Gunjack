@@ -1,0 +1,23 @@
+<dependencies>
+  <compile
+      roots="D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release">
+    <dependency
+        name="D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
+        simpleName="Gradle:unityLibrary"/>
+  </compile>
+  <package
+      roots="D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release,__local_aars__:D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar,:openxr_loader:@aar,D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary:xrmanifest.androidlib::release">
+    <dependency
+        name="D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
+        simpleName="Gradle:unityLibrary"/>
+    <dependency
+        name="__local_aars__:D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"
+        simpleName="__local_aars__:D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar"/>
+    <dependency
+        name=":openxr_loader:@aar"
+        simpleName=":openxr_loader"/>
+    <dependency
+        name="D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary:xrmanifest.androidlib::release"
+        simpleName="Gradle.unityLibrary:xrmanifest.androidlib"/>
+  </package>
+</dependencies>

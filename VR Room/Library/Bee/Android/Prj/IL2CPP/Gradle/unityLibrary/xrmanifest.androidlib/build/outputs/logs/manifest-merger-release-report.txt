@@ -1,0 +1,63 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:2:1-12:12
+INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:2:1-12:12
+INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:2:1-12:12
+	package
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:2:70-113
+		INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml
+		INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:3:3-8:17
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:4:5-6:16
+	android:exported
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:4:69-92
+	android:name
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:4:15-68
+meta-data#com.oculus.vr.focusaware
+ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:5:7-81
+	android:value
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:5:58-78
+	android:name
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:5:18-57
+meta-data#com.oculus.supportedDevices
+ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:7:5-113
+	android:value
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:7:59-110
+	android:name
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:7:16-58
+uses-feature#android.hardware.vr.headtracking
+ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:9:3-111
+	android:version
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:9:89-108
+	android:required
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:9:65-88
+	android:name
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:9:17-64
+uses-feature#oculus.software.eye_tracking
+ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:10:3-87
+	android:required
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:10:61-84
+	android:name
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:10:17-60
+uses-permission#com.oculus.permission.EYE_TRACKING
+ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:11:3-72
+	android:name
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:11:20-69
+uses-sdk
+INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml
+INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml
+INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml
+INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml
+		INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml
+		ADDED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml
+		INJECTED from D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml

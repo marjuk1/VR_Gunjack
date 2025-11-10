@@ -72,8 +72,9 @@ public class FireBulletOnActivate : MonoBehaviour
     {
         if (ammoText != null)
         {
-            ammoText.text = $"Ammo: {currentAmmo} / {reserveAmmo}";
-        }
+			ammoText.text = $"{currentAmmo} / {reserveAmmo}";
+			ammoText.color = currentAmmo == 0 ? Color.red : Color.blue;
+		}
     }
 
 }

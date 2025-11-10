@@ -1,0 +1,31 @@
+# List of SDK dependencies of this app, this information is also included in an encrypted form in the APK.
+# For more information visit: https://d.android.com/r/tools/dependency-metadata
+
+library {
+  maven_library {
+    artifactId: "openxr_loader"
+  }
+  digests {
+    sha256: "\004QCr\343\003\216\257\203E\242\327jH]\265b1\301\336\032~\365\313\372\3075\313\251U\215\250"
+  }
+}
+library {
+  digests {
+    sha256: "\317(\224\375\270e\003n\225\303\277o\342\336\212b\240\f\355Q\206\023\275F;\346\202\374Y}\3026"
+  }
+}
+module_dependencies {
+  module_name: "base"
+  dependency_index: 0
+  dependency_index: 1
+}
+repositories {
+  maven_repo {
+    url: "https://dl.google.com/dl/android/maven2/"
+  }
+}
+repositories {
+  maven_repo {
+    url: "https://repo.maven.apache.org/maven2/"
+  }
+}

@@ -1,0 +1,51 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.UnityTechnologies.XR.Manifest" >
+4
+5    <uses-sdk android:minSdkVersion="29" />
+5-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml
+6
+7    <uses-feature
+7-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:9:3-111
+8        android:name="android.hardware.vr.headtracking"
+8-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:9:17-64
+9        android:required="true"
+9-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:9:65-88
+10        android:version="1" />
+10-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:9:89-108
+11    <uses-feature
+11-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:10:3-87
+12        android:name="oculus.software.eye_tracking"
+12-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:10:17-60
+13        android:required="true" />
+13-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:10:61-84
+14
+15    <uses-permission android:name="com.oculus.permission.EYE_TRACKING" />
+15-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:11:3-72
+15-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:11:20-69
+16
+17    <application>
+17-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:3:3-8:17
+18        <activity
+18-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:4:5-6:16
+19            android:name="com.unity3d.player.UnityPlayerActivity"
+19-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:4:15-68
+20            android:exported="true" >
+20-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:4:69-92
+21            <meta-data
+21-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:5:7-81
+22                android:name="com.oculus.vr.focusaware"
+22-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:5:18-57
+23                android:value="true" />
+23-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:5:58-78
+24        </activity>
+25
+26        <meta-data
+26-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:7:5-113
+27            android:name="com.oculus.supportedDevices"
+27-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:7:16-58
+28            android:value="quest|quest2|cambria|eureka|quest3s" />
+28-->D:\Logikos schemos\VR_Gunjack\VR Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\AndroidManifest.xml:7:59-110
+29    </application>
+30
+31</manifest>
