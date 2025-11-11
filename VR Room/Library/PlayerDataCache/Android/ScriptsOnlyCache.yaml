@@ -2,10 +2,12 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AnimateHandOnInput
+    - Bullet
     - FireBulletOnActivate
     - GameMenuManager
     - Grenade
     - HealthManager
+    - HitMarkerManager
     - SimpleShoot
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
@@ -61,8 +63,6 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.XRSystemData
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.ShaderGraph.Editor.dll:
-    - UnityEditor.ShaderGraph.ShaderGraphProjectSettings
     Unity.TextMeshPro:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
@@ -105,11 +105,7 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual
     - UnityEngine.XR.Interaction.Toolkit.XRRayInteractor
     Unity.XR.Management.Editor.dll:
-    - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     - UnityEditor.XR.Management.XRManagerSettingsEditor
-    Unity.XR.Management.dll:
-    - UnityEngine.XR.Management.XRGeneralSettings
-    - UnityEngine.XR.Management.XRManagerSettings
     Unity.XR.Oculus.dll:
     - Unity.XR.Oculus.OculusSettings
     Unity.XR.OpenXR.Editor.dll:
@@ -326,6 +322,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -349,167 +349,171 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 696}
     - Class: 114
-      Script: {instanceID: 16898}
+      Script: {instanceID: 16924}
     - Class: 114
-      Script: {instanceID: 16902}
+      Script: {instanceID: 16930}
     - Class: 114
-      Script: {instanceID: 16904}
+      Script: {instanceID: 16932}
     - Class: 114
-      Script: {instanceID: 16906}
+      Script: {instanceID: 16934}
     - Class: 114
-      Script: {instanceID: 16908}
+      Script: {instanceID: 16936}
     - Class: 114
-      Script: {instanceID: 16912}
+      Script: {instanceID: 16938}
     - Class: 114
-      Script: {instanceID: 16918}
+      Script: {instanceID: 16940}
     - Class: 114
-      Script: {instanceID: 16956}
+      Script: {instanceID: 16944}
     - Class: 114
-      Script: {instanceID: 17078}
+      Script: {instanceID: 16946}
     - Class: 114
-      Script: {instanceID: 17274}
+      Script: {instanceID: 16952}
     - Class: 114
-      Script: {instanceID: 17444}
+      Script: {instanceID: 16990}
     - Class: 114
-      Script: {instanceID: 17684}
+      Script: {instanceID: 17308}
     - Class: 114
-      Script: {instanceID: 18070}
+      Script: {instanceID: 17480}
     - Class: 114
-      Script: {instanceID: 18564}
+      Script: {instanceID: 17720}
     - Class: 114
-      Script: {instanceID: 18616}
+      Script: {instanceID: 18106}
     - Class: 114
-      Script: {instanceID: 18634}
+      Script: {instanceID: 18602}
     - Class: 114
-      Script: {instanceID: 18778}
+      Script: {instanceID: 18654}
     - Class: 114
-      Script: {instanceID: 19048}
+      Script: {instanceID: 18674}
     - Class: 114
-      Script: {instanceID: 19352}
+      Script: {instanceID: 18818}
     - Class: 114
-      Script: {instanceID: 20138}
+      Script: {instanceID: 19090}
     - Class: 114
-      Script: {instanceID: 20186}
+      Script: {instanceID: 19394}
     - Class: 114
-      Script: {instanceID: 20246}
+      Script: {instanceID: 20188}
     - Class: 114
-      Script: {instanceID: 20314}
+      Script: {instanceID: 20298}
     - Class: 114
-      Script: {instanceID: 20500}
+      Script: {instanceID: 20366}
     - Class: 114
-      Script: {instanceID: 20522}
+      Script: {instanceID: 20554}
     - Class: 114
-      Script: {instanceID: 20998}
+      Script: {instanceID: 20578}
     - Class: 114
-      Script: {instanceID: 21006}
+      Script: {instanceID: 21056}
     - Class: 114
-      Script: {instanceID: 21072}
+      Script: {instanceID: 21064}
     - Class: 114
-      Script: {instanceID: 21184}
+      Script: {instanceID: 21130}
     - Class: 114
-      Script: {instanceID: 21258}
+      Script: {instanceID: 21242}
     - Class: 114
-      Script: {instanceID: 21262}
+      Script: {instanceID: 21316}
     - Class: 114
-      Script: {instanceID: 21522}
+      Script: {instanceID: 21320}
     - Class: 114
-      Script: {instanceID: 21652}
+      Script: {instanceID: 21580}
     - Class: 114
-      Script: {instanceID: 21662}
+      Script: {instanceID: 21710}
     - Class: 114
-      Script: {instanceID: 21704}
+      Script: {instanceID: 21720}
     - Class: 114
-      Script: {instanceID: 21870}
+      Script: {instanceID: 21762}
     - Class: 114
-      Script: {instanceID: 21872}
+      Script: {instanceID: 21928}
     - Class: 114
-      Script: {instanceID: 22242}
+      Script: {instanceID: 21930}
     - Class: 114
-      Script: {instanceID: 22540}
+      Script: {instanceID: 22304}
     - Class: 114
-      Script: {instanceID: 22578}
+      Script: {instanceID: 22602}
     - Class: 114
-      Script: {instanceID: 22626}
+      Script: {instanceID: 22616}
     - Class: 114
-      Script: {instanceID: 22768}
+      Script: {instanceID: 22642}
     - Class: 114
-      Script: {instanceID: 22816}
+      Script: {instanceID: 22690}
     - Class: 114
-      Script: {instanceID: 23312}
+      Script: {instanceID: 22832}
     - Class: 114
-      Script: {instanceID: 23582}
+      Script: {instanceID: 22882}
     - Class: 114
-      Script: {instanceID: 23658}
+      Script: {instanceID: 23376}
     - Class: 114
-      Script: {instanceID: 23798}
+      Script: {instanceID: 23646}
     - Class: 114
-      Script: {instanceID: 24010}
+      Script: {instanceID: 23722}
     - Class: 114
-      Script: {instanceID: 24172}
+      Script: {instanceID: 23864}
     - Class: 114
-      Script: {instanceID: 24196}
+      Script: {instanceID: 24236}
     - Class: 114
-      Script: {instanceID: 24564}
+      Script: {instanceID: 24260}
     - Class: 114
-      Script: {instanceID: 24598}
+      Script: {instanceID: 24632}
     - Class: 114
-      Script: {instanceID: 24864}
+      Script: {instanceID: 24666}
     - Class: 114
       Script: {instanceID: 24932}
     - Class: 114
-      Script: {instanceID: 25002}
+      Script: {instanceID: 25000}
     - Class: 114
-      Script: {instanceID: 25130}
+      Script: {instanceID: 25072}
     - Class: 114
-      Script: {instanceID: 25134}
+      Script: {instanceID: 25202}
     - Class: 114
-      Script: {instanceID: 25272}
+      Script: {instanceID: 25206}
     - Class: 114
-      Script: {instanceID: 25378}
+      Script: {instanceID: 25344}
     - Class: 114
-      Script: {instanceID: 25400}
+      Script: {instanceID: 25450}
     - Class: 114
-      Script: {instanceID: 25518}
+      Script: {instanceID: 25472}
     - Class: 114
-      Script: {instanceID: 25632}
+      Script: {instanceID: 25590}
     - Class: 114
-      Script: {instanceID: 25702}
+      Script: {instanceID: 25704}
     - Class: 114
-      Script: {instanceID: 26308}
+      Script: {instanceID: 25774}
     - Class: 114
-      Script: {instanceID: 26346}
+      Script: {instanceID: 26382}
     - Class: 114
-      Script: {instanceID: 26372}
+      Script: {instanceID: 26420}
     - Class: 114
-      Script: {instanceID: 26426}
+      Script: {instanceID: 26446}
     - Class: 114
-      Script: {instanceID: 26628}
+      Script: {instanceID: 26500}
     - Class: 114
-      Script: {instanceID: 26900}
+      Script: {instanceID: 26706}
     - Class: 114
-      Script: {instanceID: 26904}
+      Script: {instanceID: 26980}
     - Class: 114
-      Script: {instanceID: 27202}
+      Script: {instanceID: 26984}
     - Class: 114
-      Script: {instanceID: 27362}
+      Script: {instanceID: 27282}
     - Class: 114
-      Script: {instanceID: 27470}
+      Script: {instanceID: 27444}
     - Class: 114
-      Script: {instanceID: 27560}
+      Script: {instanceID: 27552}
     - Class: 114
-      Script: {instanceID: 27700}
+      Script: {instanceID: 27642}
     - Class: 114
-      Script: {instanceID: 27844}
+      Script: {instanceID: 27782}
     - Class: 114
-      Script: {instanceID: 28142}
+      Script: {instanceID: 27926}
     - Class: 114
-      Script: {instanceID: 28160}
+      Script: {instanceID: 28228}
     - Class: 114
-      Script: {instanceID: 28904}
+      Script: {instanceID: 28246}
     - Class: 114
-      Script: {instanceID: 28958}
+      Script: {instanceID: 28992}
     - Class: 114
-      Script: {instanceID: 247226}
+      Script: {instanceID: 29046}
+    - Class: 114
+      Script: {instanceID: 46484}
+    - Class: 114
+      Script: {instanceID: 47032}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -615,10 +619,22 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 8dff8e9853297d341afa0c11f9091b59
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: LayoutElement
+  - hash:
+      serializedVersion: 2
       Hash: 915204dac8acad99f076d6e72ada0a0f
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 10c17b309bdca62b4d7fbaf113ed4ca0
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Toggle
   - hash:
       serializedVersion: 2
       Hash: b747f5d40674055dd70e18552f1b0447
@@ -631,6 +647,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: e987953190eb4c12cf19df790566dc2c
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.EventSystems
+    className: EventSystem
   - hash:
       serializedVersion: 2
       Hash: d5cd7f207e91ca8336c65a577a6fb2a0
@@ -657,6 +679,12 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
+      Hash: bf685153e52ad17267be9effc663460b
+    assemblyName: Unity.XR.Oculus
+    namespaceName: Unity.XR.Oculus
+    className: OculusSettings
+  - hash:
+      serializedVersion: 2
       Hash: 7e0706bf120aeabb33d946ba8e021337
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit.Transformers
@@ -667,12 +695,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnScrollbarValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 8dff8e9853297d341afa0c11f9091b59
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: LayoutElement
   - hash:
       serializedVersion: 2
       Hash: f1a1fac39f7caba42c072d3c1c7d3a2e
@@ -1095,12 +1117,6 @@ ScriptsOnlyBuild:
     className: FadeCanvas
   - hash:
       serializedVersion: 2
-      Hash: 731480b83236435ed9fb94ca37cf5283
-    assemblyName: Unity.XR.Management
-    namespaceName: UnityEngine.XR.Management
-    className: XRGeneralSettings
-  - hash:
-      serializedVersion: 2
       Hash: 960935b102b3064f4b924de16426e340
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -1129,12 +1145,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: XRLever
-  - hash:
-      serializedVersion: 2
-      Hash: 0ed7dfcb5356681e6627b207891cb849
-    assemblyName: Unity.XR.Management
-    namespaceName: UnityEngine.XR.Management
-    className: XRManagerSettings
   - hash:
       serializedVersion: 2
       Hash: 0a3f328f3ea906bbbcf794f4c27ee59d
@@ -1401,10 +1411,10 @@ ScriptsOnlyBuild:
     className: TransitionArmModel
   - hash:
       serializedVersion: 2
-      Hash: 10c17b309bdca62b4d7fbaf113ed4ca0
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Toggle
+      Hash: 2c610099abef686610392b2cac4c7d05
+    assemblyName: Unity.XR.Oculus
+    namespaceName: Unity.XR.Oculus
+    className: OculusRestarter
   - hash:
       serializedVersion: 2
       Hash: 482940c1f9e3b5178edd7cebeb01e8c2
@@ -1689,7 +1699,7 @@ ScriptsOnlyBuild:
     className: TouchSimulation
   - hash:
       serializedVersion: 2
-      Hash: 16502b158d54a50ee029e7f203448977
+      Hash: e16caca2c63e9848a4be7bd9dc0ad8d4
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FireBulletOnActivate
@@ -1909,6 +1919,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.XR
     className: TrackedPoseDriver
+  - hash:
+      serializedVersion: 2
+      Hash: de7f72624704bb60f59910e191ebb9ac
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Grenade
   - hash:
       serializedVersion: 2
       Hash: 0f5a086d4d028363983ba6ca30a01397
@@ -2287,12 +2303,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: Benchmark01_UGUI
-  - hash:
-      serializedVersion: 2
-      Hash: e987953190eb4c12cf19df790566dc2c
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.EventSystems
-    className: EventSystem
   - hash:
       serializedVersion: 2
       Hash: 52db48e3be0a2b4f8b06f918fd1ebfbc
@@ -3273,6 +3283,12 @@ ScriptsOnlyBuild:
     className: XRSingleGrabFreeTransformer
   - hash:
       serializedVersion: 2
+      Hash: e6f94d3a43e3389dfdd89a8e8ea6f8b5
+    assemblyName: Unity.XR.Oculus
+    namespaceName: Unity.XR.Oculus
+    className: OculusLoader
+  - hash:
+      serializedVersion: 2
       Hash: 96d9bba9e31316466ecf589b51e83ca6
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit
@@ -3537,28 +3553,16 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: e6f94d3a43e3389dfdd89a8e8ea6f8b5
-    assemblyName: Unity.XR.Oculus
-    namespaceName: Unity.XR.Oculus
-    className: OculusLoader
-  - hash:
-      serializedVersion: 2
-      Hash: bf685153e52ad17267be9effc663460b
-    assemblyName: Unity.XR.Oculus
-    namespaceName: Unity.XR.Oculus
-    className: OculusSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 2c610099abef686610392b2cac4c7d05
-    assemblyName: Unity.XR.Oculus
-    namespaceName: Unity.XR.Oculus
-    className: OculusRestarter
-  - hash:
-      serializedVersion: 2
-      Hash: de7f72624704bb60f59910e191ebb9ac
+      Hash: 205d16797af8786bce72dc926046ec00
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: Grenade
+    className: HitMarkerManager
+  - hash:
+      serializedVersion: 2
+      Hash: 2ca57fc056d6c6bb6b30fccadf70dfa9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Bullet
   platform: 13
   scenePathNames:
   - Assets/Scenes/TestingScene.unity

@@ -6,6 +6,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
+
+
 public class FireBulletOnActivate : MonoBehaviour
 {
     [Header("Bullet Settings")]
@@ -23,8 +25,13 @@ public class FireBulletOnActivate : MonoBehaviour
 
     [Header("UI")]
     public TextMeshProUGUI ammoText;
-    // Start is called before the first frame update
-    void Start()
+
+	[Header("Audio")]
+	public AudioSource audioSource;
+	public AudioClip gunshotClip;
+	// Start is called before the first frame update
+
+	void Start()
     {
         currentAmmo = maxAmmo;
         UpdateAmmoUI();
@@ -50,11 +57,19 @@ public class FireBulletOnActivate : MonoBehaviour
                 rb.velocity = spawnPoint.forward * speed;
 
             Destroy(spawnedBullet, 5f);
-        }
+
+			if (audioSource != null && gunshotClip != null)
+			{
+				audioSource.pitch = UnityEngine.Random.Range(0.95f, 1.05f);
+				audioSource.PlayOneShot(gunshotClip);
+			}
+		}
         else
         {
             Debug.Log("Out of ammo");
         }
+
+
     }
 
     public void Reload()

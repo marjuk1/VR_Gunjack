@@ -29,6 +29,8 @@ extern void FirstPersonMovement__ctor_mD1305896B698A089ECA24F8DB3E11052FE675C0A 
 extern void AnimateHandOnInput_Start_mDFB567101BCB7DCE653AE7E320015E93D3609592 (void);
 extern void AnimateHandOnInput_Update_mC03CF4BE3804324BBC246D79B71F83B1A8848CDD (void);
 extern void AnimateHandOnInput__ctor_mEA43A853FB1CB874A55072BFBF7A8B78BEF60F1C (void);
+extern void Bullet_OnCollisionEnter_m72CBCABC68C9C953EF4E3CB20C4E083FDB541E54 (void);
+extern void Bullet__ctor_m873C02F2114EA93A35E4392013AC831246756CBA (void);
 extern void FireBulletOnActivate_Start_m6E58606BCE8940F0CEA4A893AA1E24EFE89DD7BC (void);
 extern void FireBulletOnActivate_Update_m0CFA4AA80E370DB41A85EC002EBB241C26D3BD2C (void);
 extern void FireBulletOnActivate_FireBullet_mEEA4046928EAE034606E6BE796951D6F808488F7 (void);
@@ -60,6 +62,16 @@ extern void HealthManager_TakeDamage_m7A0B2ED642EC8F5E07542ECA2FFD0E510F964F9D (
 extern void HealthManager_Heal_m08245EA8AA755C031A38F09A9384E5CD0181E8CE (void);
 extern void HealthManager_UpdateHealthBar_mD604CF4F2BF14B3AB984A191E8BEA7B6395ECD12 (void);
 extern void HealthManager__ctor_mB388E33873161D61C1F4188A9E6A6C3B41D96A5F (void);
+extern void HitMarkerManager_Awake_mDED525D7B37EFD3BA41E09CA8F43A43CB3F8312D (void);
+extern void HitMarkerManager_ShowHitMarker_m08A957E69D57B6C672AE95284BA3ED97E0C8EDCA (void);
+extern void HitMarkerManager_ShowMarkerRoutine_mA5CAE440EE3DEC3679EF794A36499D1CB63B4C72 (void);
+extern void HitMarkerManager__ctor_mD05B5827BF2B627BF36D713EF6741B2CE34B692F (void);
+extern void U3CShowMarkerRoutineU3Ed__5__ctor_m16F73793BC1F3C95F1FE835EA242BA4C52A69D31 (void);
+extern void U3CShowMarkerRoutineU3Ed__5_System_IDisposable_Dispose_m2D37D41AC55E1D906C0BB53494F964D8EC8C93ED (void);
+extern void U3CShowMarkerRoutineU3Ed__5_MoveNext_m65A2CB482CBDA1652B1F4856897AF857BBDE0484 (void);
+extern void U3CShowMarkerRoutineU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB56C01EB4301C44AAB979C9B5B882C592A7E38A1 (void);
+extern void U3CShowMarkerRoutineU3Ed__5_System_Collections_IEnumerator_Reset_m3039052C44ED3F6E6BC219BE6E08AE30CBFAA603 (void);
+extern void U3CShowMarkerRoutineU3Ed__5_System_Collections_IEnumerator_get_Current_m721A2E24F750DD8FABD9FF750E704B8167DAC943 (void);
 extern void ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7 (void);
 extern void ChatController_OnDisable_mD49D03719CAEBB3F59F24A7FA8F4FD30C8B54E46 (void);
 extern void ChatController_AddToChatOutput_m9AB8FA8A32EA23F2E55795D8301ED0BF6A59F722 (void);
@@ -710,7 +722,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[712] = 
+static Il2CppMethodPointer s_methodPointers[724] = 
 {
 	SimpleShoot_Start_m49FBE100F02C578F2B3790D8F8C70B6D186C4EAE,
 	SimpleShoot_Update_m9398FE8946B099F32DC83B8F743B14921950B604,
@@ -729,6 +741,8 @@ static Il2CppMethodPointer s_methodPointers[712] =
 	AnimateHandOnInput_Start_mDFB567101BCB7DCE653AE7E320015E93D3609592,
 	AnimateHandOnInput_Update_mC03CF4BE3804324BBC246D79B71F83B1A8848CDD,
 	AnimateHandOnInput__ctor_mEA43A853FB1CB874A55072BFBF7A8B78BEF60F1C,
+	Bullet_OnCollisionEnter_m72CBCABC68C9C953EF4E3CB20C4E083FDB541E54,
+	Bullet__ctor_m873C02F2114EA93A35E4392013AC831246756CBA,
 	FireBulletOnActivate_Start_m6E58606BCE8940F0CEA4A893AA1E24EFE89DD7BC,
 	FireBulletOnActivate_Update_m0CFA4AA80E370DB41A85EC002EBB241C26D3BD2C,
 	FireBulletOnActivate_FireBullet_mEEA4046928EAE034606E6BE796951D6F808488F7,
@@ -760,6 +774,16 @@ static Il2CppMethodPointer s_methodPointers[712] =
 	HealthManager_Heal_m08245EA8AA755C031A38F09A9384E5CD0181E8CE,
 	HealthManager_UpdateHealthBar_mD604CF4F2BF14B3AB984A191E8BEA7B6395ECD12,
 	HealthManager__ctor_mB388E33873161D61C1F4188A9E6A6C3B41D96A5F,
+	HitMarkerManager_Awake_mDED525D7B37EFD3BA41E09CA8F43A43CB3F8312D,
+	HitMarkerManager_ShowHitMarker_m08A957E69D57B6C672AE95284BA3ED97E0C8EDCA,
+	HitMarkerManager_ShowMarkerRoutine_mA5CAE440EE3DEC3679EF794A36499D1CB63B4C72,
+	HitMarkerManager__ctor_mD05B5827BF2B627BF36D713EF6741B2CE34B692F,
+	U3CShowMarkerRoutineU3Ed__5__ctor_m16F73793BC1F3C95F1FE835EA242BA4C52A69D31,
+	U3CShowMarkerRoutineU3Ed__5_System_IDisposable_Dispose_m2D37D41AC55E1D906C0BB53494F964D8EC8C93ED,
+	U3CShowMarkerRoutineU3Ed__5_MoveNext_m65A2CB482CBDA1652B1F4856897AF857BBDE0484,
+	U3CShowMarkerRoutineU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB56C01EB4301C44AAB979C9B5B882C592A7E38A1,
+	U3CShowMarkerRoutineU3Ed__5_System_Collections_IEnumerator_Reset_m3039052C44ED3F6E6BC219BE6E08AE30CBFAA603,
+	U3CShowMarkerRoutineU3Ed__5_System_Collections_IEnumerator_get_Current_m721A2E24F750DD8FABD9FF750E704B8167DAC943,
 	ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7,
 	ChatController_OnDisable_mD49D03719CAEBB3F59F24A7FA8F4FD30C8B54E46,
 	ChatController_AddToChatOutput_m9AB8FA8A32EA23F2E55795D8301ED0BF6A59F722,
@@ -1425,7 +1449,7 @@ static Il2CppMethodPointer s_methodPointers[712] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[712] = 
+static const int32_t s_InvokerIndices[724] = 
 {
 	8066,
 	8066,
@@ -1443,6 +1467,8 @@ static const int32_t s_InvokerIndices[712] =
 	8066,
 	8066,
 	8066,
+	8066,
+	6333,
 	8066,
 	8066,
 	8066,
@@ -1475,6 +1501,16 @@ static const int32_t s_InvokerIndices[712] =
 	6390,
 	8066,
 	8066,
+	8066,
+	8066,
+	7924,
+	8066,
+	6296,
+	8066,
+	7801,
+	7924,
+	8066,
+	7924,
 	8066,
 	8066,
 	6333,
@@ -2142,10 +2178,10 @@ static const int32_t s_InvokerIndices[712] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[4] = 
 {
-	{ 0x02000056, { 4, 4 } },
-	{ 0x02000058, { 12, 4 } },
-	{ 0x060001B8, { 0, 4 } },
-	{ 0x060001C5, { 8, 4 } },
+	{ 0x02000059, { 4, 4 } },
+	{ 0x0200005B, { 12, 4 } },
+	{ 0x060001C4, { 0, 4 } },
+	{ 0x060001D1, { 8, 4 } },
 };
 extern const uint32_t g_rgctx_U3CFadeSequenceU3Ed__6_1_t4A35DCF146DBECAD94EF8A7387C36F37F0B33F14;
 extern const uint32_t g_rgctx_U3CFadeSequenceU3Ed__6_1__ctor_m3707100E3EBBE4291E194D971B25E3873391043F;
@@ -2186,7 +2222,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	712,
+	724,
 	s_methodPointers,
 	0,
 	NULL,
