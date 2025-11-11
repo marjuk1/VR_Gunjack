@@ -404,6 +404,7 @@
 "Assets/Assets/WW1 Gun&Equipments Package/Scripts/FirstPersonLook.cs"
 "Assets/Assets/WW1 Gun&Equipments Package/Scripts/FirstPersonMovement.cs"
 "Assets/Scripts/AnimateHandOnInput.cs"
+"Assets/Scripts/EnemyAIController.cs"
 "Assets/Scripts/FireBulletOnActivate.cs"
 "Assets/Scripts/GameMenuManager.cs"
 "Assets/Scripts/Granade.cs"
