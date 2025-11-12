@@ -4,7 +4,7 @@ public class Bullet : MonoBehaviour
 {
 	private void OnCollisionEnter(Collision collision)
 	{
-		if (collision.gameObject.CompareTag("Enemy"))
+		if (collision.gameObject.CompareTag("Untagged"))
 		{
 			Debug.Log("Hit enemy!");
 
@@ -12,6 +12,5 @@ public class Bullet : MonoBehaviour
 				HitMarkerManager.Instance.ShowHitMarker();
 		}
 
-		Destroy(gameObject); // Destroy bullet after impact
 	}
 }
