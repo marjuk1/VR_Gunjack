@@ -23,6 +23,10 @@ public class FireBulletOnActivate : MonoBehaviour
 
     [Header("UI")]
     public TextMeshProUGUI ammoText;
+
+    [Header("Audio")]
+	public AudioSource audioSource;
+	public AudioClip gunshotClip;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +54,12 @@ public class FireBulletOnActivate : MonoBehaviour
                 rb.velocity = spawnPoint.forward * speed;
 
             Destroy(spawnedBullet, 5f);
+
+            if (audioSource != null && gunshotClip != null)
+			{
+				audioSource.pitch = UnityEngine.Random.Range(0.95f, 1.05f);
+				audioSource.PlayOneShot(gunshotClip);
+			}
         }
         else
         {
