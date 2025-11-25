@@ -13,6 +13,11 @@ public class FireBulletOnActivate : MonoBehaviour
     public Transform spawnPoint;
     public float speed = 20f;
 
+    [Header("VFX")]
+    public GameObject muzzleFlashPrefab; // VFX prefab for muzzle flash
+    public float muzzleFlashDuration = 0.2f; // Duration for the muzzle flash
+
+
     [Header("XR")]
     public XRGrabInteractable grabbable;
 
@@ -66,6 +71,12 @@ public class FireBulletOnActivate : MonoBehaviour
             }
             Destroy(spawnedBullet, 5f);
 
+            if (muzzleFlashPrefab != null)
+            {
+                GameObject muzzleFlash = Instantiate(muzzleFlashPrefab, spawnPoint.position, spawnPoint.rotation);
+                Destroy(muzzleFlash, muzzleFlashDuration); // Destroy the VFX after a short duration
+            }
+
             if (audioSource != null && gunshotClip != null)
             {
                 audioSource.pitch = UnityEngine.Random.Range(0.95f, 1.05f);
@@ -94,7 +105,7 @@ public class FireBulletOnActivate : MonoBehaviour
         if (ammoText != null)
         {
             ammoText.text = $"{currentAmmo} / {reserveAmmo}";
-            ammoText.color = currentAmmo == 0 ? Color.red : Color.blue;
+            ammoText.color = currentAmmo == 0 ? Color.red : Color.green;
         }
     }
 

@@ -11,7 +11,7 @@ public class Grenade : MonoBehaviour
 	public AudioClip explosionSfx;
 	public float explosionRadius = 5f;
 	public float explosionForce = 700f;
-	public int explosionDamage = 50;
+	public int explosionDamage = 100;
 	public float destroyAfter = 5f;
 
 	[Header("Throw / Fuse")]
