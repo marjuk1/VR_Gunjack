@@ -27,6 +27,9 @@ public class FireBulletOnActivate : MonoBehaviour
     [Header("Audio")]
 	public AudioSource audioSource;
 	public AudioClip gunshotClip;
+
+
+    private Collider gunCollider;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +37,7 @@ public class FireBulletOnActivate : MonoBehaviour
         UpdateAmmoUI();
         grabbable = GetComponent<XRGrabInteractable>();
         grabbable.activated.AddListener(FireBullet);
+        gunCollider = GetComponent<Collider>(); 
     }
 
     // Update is called once per frame
@@ -53,6 +57,13 @@ public class FireBulletOnActivate : MonoBehaviour
             if (rb != null)
                 rb.velocity = spawnPoint.forward * speed;
 
+
+            Collider bulletCol = spawnedBullet.GetComponent<Collider>();
+            if (bulletCol != null && gunCollider != null)
+            {
+                Physics.IgnoreCollision(bulletCol, gunCollider, true);
+                Debug.Log(gunCollider);
+            }
             Destroy(spawnedBullet, 5f);
 
             if (audioSource != null && gunshotClip != null)

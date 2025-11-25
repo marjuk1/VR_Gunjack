@@ -8,7 +8,7 @@ public class HealthManager : MonoBehaviour
 {
     [Header("Health Settings")]
     public float maxHealth = 100f;
-    public float currentHealth;
+    public float currentHealth = 100f;
 
     [Header("UI")]
     public Slider healthBar;
@@ -33,8 +33,11 @@ public class HealthManager : MonoBehaviour
     }
     public void TakeDamage(float damage)
     {
+        Debug.Log("PLAYER TOOK DAMAGE");
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, maxHealth);
         UpdateHealthBar();
+        if(currentHealth <= 0) 
+            Die();
     }
 
     public void Heal(float amount)
@@ -49,5 +52,9 @@ public class HealthManager : MonoBehaviour
             healthBar.value = currentHealth;
         if (healthtext != null)
             healthtext.text = setHealthText();
+    }
+    private void Die()
+    {
+        //dying logic
     }
 }

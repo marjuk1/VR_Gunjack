@@ -411,6 +411,7 @@
 "Assets/Scripts/Granade.cs"
 "Assets/Scripts/HealthManager.cs"
 "Assets/Scripts/HitMarkerManager.cs"
+"Assets/Scripts/WaveManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

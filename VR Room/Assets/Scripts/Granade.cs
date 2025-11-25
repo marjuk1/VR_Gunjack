@@ -126,7 +126,11 @@ public class Grenade : MonoBehaviour
 			}
 
 			// Damageable interface or tag check
-			
+			EnemyAIController enemy = col.GetComponentInParent<EnemyAIController>();
+			if (enemy != null)
+			{
+				enemy.TakeDamage(explosionDamage);
+			}
 
 			// or use tag:
 			// if (col.CompareTag("Enemy")) { ... reduce health ... }

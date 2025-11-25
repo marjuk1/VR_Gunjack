@@ -8,7 +8,7 @@ public class EnemyAIController : MonoBehaviour
     [Header("References")]
     public Transform player;
     private Animator anim;
-    private NavMeshAgent agent;
+    public NavMeshAgent agent;
 
     [Header("AI Settings")]
     public float detectionRange = 5f;
@@ -17,6 +17,9 @@ public class EnemyAIController : MonoBehaviour
     public float attackRange = 2.5f;
     public float attackCooldown = 2f;
     public float rotationSpeed = 5f;
+
+    public float attackDamage = 20f;
+    private HealthManager playerHealth;
 
     [Header("Health")]
     public float maxHealth = 100f;
@@ -31,7 +34,11 @@ public class EnemyAIController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
+
+        if(anim == null)
+            anim = GetComponentInChildren<Animator>();
         currentHealth = maxHealth;
+
 
         // Auto-find XR player rig
         if (player == null)
@@ -44,6 +51,7 @@ public class EnemyAIController : MonoBehaviour
                 if (p != null) player = p.transform;
             }
         }
+        playerHealth = FindObjectOfType<HealthManager>();
     }
 
     void Update()
@@ -51,20 +59,20 @@ public class EnemyAIController : MonoBehaviour
         if (isDead || player == null) return;
 
         float distance = Vector3.Distance(transform.position, player.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
         if (distance > detectionRange)
         {
-            Debug.Log("IDLE");
+            //Debug.Log($"{this.gameObject.name}: IDLE");
             Idle();
         }
         else if (distance < detectionRange && distance > attackRange)
         {
-            Debug.Log("MOVE TO PLAYER");
+            //Debug.Log($"{this.gameObject.name}: MOVE TO PLAYER");
             MoveTowardsPlayer(distance);
         }
         else
         {
-            Debug.Log("ATTACK PLAYER");
+            //Debug.Log($"{this.gameObject.name}: ATTACK PLAYER");
             AttackPlayer();
         }
     }
@@ -147,6 +155,11 @@ public class EnemyAIController : MonoBehaviour
             anim.SetBool("isIdle", false);
             anim.SetBool("isWalking", false);
             anim.SetBool("isRunning", false);
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(attackDamage);
+                Debug.Log("Player damaged for: " + attackDamage);
+            }
 
             StartCoroutine(EndAttackAfterDelay(1.2f)); // match your animation duration
         }
@@ -198,6 +211,17 @@ public class EnemyAIController : MonoBehaviour
         Collider col = GetComponent<Collider>();
         if (col != null) col.enabled = false;
 
-        Destroy(gameObject, 5f);
+        FindObjectOfType<WaveManager>()?.OnEnemyKilled();
+
+        Destroy(gameObject, GetAnimationLength("death1"));
+    }
+    private float GetAnimationLength(string clipName)
+    {
+        foreach (AnimationClip clip in anim.runtimeAnimatorController.animationClips)
+        {
+            if (clip.name == clipName)
+                return clip.length;
+        }
+        return 0f;
     }
 }
