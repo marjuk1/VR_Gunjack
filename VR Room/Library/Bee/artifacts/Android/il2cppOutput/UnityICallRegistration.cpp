@@ -212,6 +212,30 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : Unity.Profiling.ProfilerRecorder
 
+	//Start Registrations for type : UnityEngine.AI.NavMeshAgent
+
+		//System.Boolean UnityEngine.AI.NavMeshAgent::SetDestination_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_AI_NavMeshAgent_SetDestination_Injected();
+		Register_UnityEngine_AI_NavMeshAgent_SetDestination_Injected();
+
+		//System.Single UnityEngine.AI.NavMeshAgent::get_speed()
+		void Register_UnityEngine_AI_NavMeshAgent_get_speed();
+		Register_UnityEngine_AI_NavMeshAgent_get_speed();
+
+		//System.Void UnityEngine.AI.NavMeshAgent::set_isStopped(System.Boolean)
+		void Register_UnityEngine_AI_NavMeshAgent_set_isStopped();
+		Register_UnityEngine_AI_NavMeshAgent_set_isStopped();
+
+		//System.Void UnityEngine.AI.NavMeshAgent::set_speed(System.Single)
+		void Register_UnityEngine_AI_NavMeshAgent_set_speed();
+		Register_UnityEngine_AI_NavMeshAgent_set_speed();
+
+		//System.Void UnityEngine.AI.NavMeshAgent::set_velocity_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_AI_NavMeshAgent_set_velocity_Injected();
+		Register_UnityEngine_AI_NavMeshAgent_set_velocity_Injected();
+
+	//End Registrations for type : UnityEngine.AI.NavMeshAgent
+
 	//Start Registrations for type : UnityEngine.Analytics.Analytics
 
 		//System.Boolean UnityEngine.Analytics.Analytics::IsInitialized()
@@ -896,6 +920,18 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.AndroidJNIHelper
 
+	//Start Registrations for type : UnityEngine.AnimationClip
+
+		//System.Single UnityEngine.AnimationClip::get_length()
+		void Register_UnityEngine_AnimationClip_get_length();
+		Register_UnityEngine_AnimationClip_get_length();
+
+		//System.Void UnityEngine.AnimationClip::Internal_CreateAnimationClip(UnityEngine.AnimationClip)
+		void Register_UnityEngine_AnimationClip_Internal_CreateAnimationClip();
+		Register_UnityEngine_AnimationClip_Internal_CreateAnimationClip();
+
+	//End Registrations for type : UnityEngine.AnimationClip
+
 	//Start Registrations for type : UnityEngine.AnimationCurve
 
 		//System.Boolean UnityEngine.AnimationCurve::Internal_Equals(System.IntPtr)
@@ -1009,6 +1045,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Animator::SetTriggerString(System.String)
 		void Register_UnityEngine_Animator_SetTriggerString();
 		Register_UnityEngine_Animator_SetTriggerString();
+
+		//UnityEngine.RuntimeAnimatorController UnityEngine.Animator::get_runtimeAnimatorController()
+		void Register_UnityEngine_Animator_get_runtimeAnimatorController();
+		Register_UnityEngine_Animator_get_runtimeAnimatorController();
 
 	//End Registrations for type : UnityEngine.Animator
 
@@ -2401,6 +2441,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
 		void Register_UnityEngine_GameObject_Find();
 		Register_UnityEngine_GameObject_Find();
+
+		//UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
+		void Register_UnityEngine_GameObject_FindGameObjectWithTag();
+		Register_UnityEngine_GameObject_FindGameObjectWithTag();
 
 		//UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
 		void Register_UnityEngine_GameObject_FindGameObjectsWithTag();
@@ -5307,6 +5351,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Rigidbody_get_collisionDetectionMode();
 
 	//End Registrations for type : UnityEngine.Rigidbody
+
+	//Start Registrations for type : UnityEngine.RuntimeAnimatorController
+
+		//UnityEngine.AnimationClip[] UnityEngine.RuntimeAnimatorController::get_animationClips()
+		void Register_UnityEngine_RuntimeAnimatorController_get_animationClips();
+		Register_UnityEngine_RuntimeAnimatorController_get_animationClips();
+
+	//End Registrations for type : UnityEngine.RuntimeAnimatorController
 
 	//Start Registrations for type : UnityEngine.ScalableBufferManager
 

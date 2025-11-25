@@ -2,6 +2,41 @@
   "report": {
     "modules": [
       {
+        "name": "AI",
+        "dependencies": [
+          {
+            "name": "NavMeshAgent",
+            "scenes": [
+              "Assets/Scenes/TestingScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "NavMeshData",
+            "scenes": [
+              "Assets/Scenes/TestingScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "NavMeshProjectSettings",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "NavMeshSettings",
+            "scenes": [
+              "Assets/Scenes/TestingScene.unity"
+            ],
+            "dependencyType": 1,
+            "icon": null
+          }
+        ]
+      },
+      {
         "name": "AndroidJNI",
         "dependencies": []
       },
@@ -73,7 +108,9 @@
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/TestingScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -93,13 +130,17 @@
           },
           {
             "name": "AudioSource",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/TestingScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "SampleClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/TestingScene.unity"
+            ],
             "dependencyType": 1,
             "icon": null
           },
@@ -505,6 +546,12 @@
             "icon": null
           },
           {
+            "name": "Required by AI Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.ai"
+          },
+          {
             "name": "Required by AndroidJNI Module",
             "scenes": [],
             "dependencyType": 2,
@@ -897,6 +944,12 @@
       {
         "name": "SharedInternals",
         "dependencies": [
+          {
+            "name": "Required by AI Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.ai"
+          },
           {
             "name": "Required by AndroidJNI Module",
             "scenes": [],

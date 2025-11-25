@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Box
+  - Trail
+  - Magazine
+  - Weapon
+  - Pistol
+  - AKM
   layers:
   - Default
   - TransparentFX

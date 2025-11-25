@@ -25,8 +25,8 @@ public class FireBulletOnActivate : MonoBehaviour
     public TextMeshProUGUI ammoText;
 
     [Header("Audio")]
-	public AudioSource audioSource;
-	public AudioClip gunshotClip;
+    public AudioSource audioSource;
+    public AudioClip gunshotClip;
 
 
     private Collider gunCollider;
@@ -37,7 +37,7 @@ public class FireBulletOnActivate : MonoBehaviour
         UpdateAmmoUI();
         grabbable = GetComponent<XRGrabInteractable>();
         grabbable.activated.AddListener(FireBullet);
-        gunCollider = GetComponent<Collider>(); 
+        gunCollider = GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -67,10 +67,10 @@ public class FireBulletOnActivate : MonoBehaviour
             Destroy(spawnedBullet, 5f);
 
             if (audioSource != null && gunshotClip != null)
-			{
-				audioSource.pitch = UnityEngine.Random.Range(0.95f, 1.05f);
-				audioSource.PlayOneShot(gunshotClip);
-			}
+            {
+                audioSource.pitch = UnityEngine.Random.Range(0.95f, 1.05f);
+                audioSource.PlayOneShot(gunshotClip);
+            }
         }
         else
         {
@@ -93,9 +93,20 @@ public class FireBulletOnActivate : MonoBehaviour
     {
         if (ammoText != null)
         {
-			ammoText.text = $"{currentAmmo} / {reserveAmmo}";
-			ammoText.color = currentAmmo == 0 ? Color.red : Color.blue;
-		}
+            ammoText.text = $"{currentAmmo} / {reserveAmmo}";
+            ammoText.color = currentAmmo == 0 ? Color.red : Color.blue;
+        }
+    }
+
+    public void AddAmmo(int ammoToAdd)
+    {
+        int neededAmmo = maxAmmo - currentAmmo;
+        int ammoToLoad = Mathf.Min(neededAmmo, ammoToAdd);
+
+        currentAmmo += ammoToLoad;
+        UpdateAmmoUI();
+
+        Debug.Log($"Added {ammoToLoad} ammo to the weapon.");
     }
 
 }
