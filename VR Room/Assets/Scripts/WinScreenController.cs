@@ -8,8 +8,12 @@ public class WinScreenController : MonoBehaviour
     /// </summary>
     public void Continue()
     {
-        // Un-pause the game before reloading
-        Time.timeScale = 1f;
+        // Reset lighting if the ScoreManager exists
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.ResetLighting();
+        }
+
         // Get the current scene and reload it
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

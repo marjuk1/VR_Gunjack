@@ -11,6 +11,7 @@ TagManager:
   - Weapon
   - Pistol
   - AKM
+  - UI
   layers:
   - Default
   - TransparentFX

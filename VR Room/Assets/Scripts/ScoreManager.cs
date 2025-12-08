@@ -16,6 +16,7 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public GameObject winScreen;
     public TextMeshProUGUI finalScoreText;
+    public TextMeshProUGUI handScoreText; // Add this line for the hand UI
 
     [Header("World Space UI Settings")]
     public Transform playerCamera; // Reference to the player's head/camera
@@ -43,8 +44,9 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         if (winScreen != null)
-            winScreen.SetActive(false); // Hide win screen at the start
-        UpdateScoreUI();
+            winScreen.SetActive(false);
+        initialAmbientIntensity = RenderSettings.ambientIntensity;
+        UpdateScoreUI(); // This will now update the hand UI at the start
 
         // Auto-find the player camera if it's not assigned
         if (playerCamera == null)
@@ -59,14 +61,12 @@ public class ScoreManager : MonoBehaviour
 
     public void AddScoreOnKill()
     {
-        if (hasWon) return; // Stop adding score after winning
-
+        if (hasWon) return;
         currentScore += pointsPerKill;
         UpdateScoreUI();
 
         if (currentScore >= winScore)
         {
-            hasWon = true;
             TriggerWinCondition();
         }
     }
@@ -76,6 +76,11 @@ public class ScoreManager : MonoBehaviour
         if (scoreText != null)
         {
             scoreText.text = $"Score: {currentScore}";
+        }
+        // Add this block to update the hand score display
+        if (handScoreText != null)
+        {
+            handScoreText.text = $"Score: {currentScore}";
         }
     }
 
