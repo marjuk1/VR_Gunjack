@@ -211,6 +211,11 @@ public class EnemyAIController : MonoBehaviour
         Collider col = GetComponent<Collider>();
         if (col != null) col.enabled = false;
 
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.AddScoreOnKill();
+        }
+
         FindObjectOfType<WaveManager>()?.OnEnemyKilled();
 
         Destroy(gameObject, GetAnimationLength("death1"));

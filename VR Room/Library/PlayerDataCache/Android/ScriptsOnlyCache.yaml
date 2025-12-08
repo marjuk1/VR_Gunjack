@@ -110,12 +110,9 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.XRRayInteractor
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
-    - UnityEditor.XR.Management.XRManagerSettingsEditor
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
-    Unity.XR.Oculus.dll:
-    - Unity.XR.Oculus.OculusSettings
     Unity.XR.OpenXR.Editor.dll:
     - UnityEditor.XR.OpenXR.OpenXREditorSettings
     - UnityEditor.XR.OpenXR.OpenXRPackageSettings
@@ -150,10 +147,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -355,193 +350,193 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 680}
+      Script: {instanceID: 702}
     - Class: 114
-      Script: {instanceID: 684}
+      Script: {instanceID: 706}
     - Class: 114
-      Script: {instanceID: 688}
+      Script: {instanceID: 710}
     - Class: 114
-      Script: {instanceID: 692}
+      Script: {instanceID: 714}
     - Class: 114
-      Script: {instanceID: 696}
+      Script: {instanceID: 718}
     - Class: 114
-      Script: {instanceID: 16922}
+      Script: {instanceID: 16946}
     - Class: 114
-      Script: {instanceID: 16926}
+      Script: {instanceID: 16950}
     - Class: 114
-      Script: {instanceID: 16928}
+      Script: {instanceID: 16952}
     - Class: 114
-      Script: {instanceID: 16930}
+      Script: {instanceID: 16954}
     - Class: 114
-      Script: {instanceID: 16932}
+      Script: {instanceID: 16956}
     - Class: 114
-      Script: {instanceID: 16936}
+      Script: {instanceID: 16960}
     - Class: 114
-      Script: {instanceID: 16942}
+      Script: {instanceID: 16966}
     - Class: 114
-      Script: {instanceID: 16980}
+      Script: {instanceID: 17004}
     - Class: 114
-      Script: {instanceID: 17104}
+      Script: {instanceID: 17128}
     - Class: 114
-      Script: {instanceID: 17300}
+      Script: {instanceID: 17324}
     - Class: 114
-      Script: {instanceID: 17472}
+      Script: {instanceID: 17496}
     - Class: 114
-      Script: {instanceID: 17712}
+      Script: {instanceID: 17740}
     - Class: 114
-      Script: {instanceID: 17788}
+      Script: {instanceID: 17816}
     - Class: 114
-      Script: {instanceID: 17820}
+      Script: {instanceID: 17848}
     - Class: 114
-      Script: {instanceID: 18102}
+      Script: {instanceID: 18132}
     - Class: 114
-      Script: {instanceID: 18598}
+      Script: {instanceID: 18630}
     - Class: 114
-      Script: {instanceID: 18650}
+      Script: {instanceID: 18682}
     - Class: 114
-      Script: {instanceID: 18670}
+      Script: {instanceID: 18702}
     - Class: 114
-      Script: {instanceID: 18814}
+      Script: {instanceID: 18850}
     - Class: 114
-      Script: {instanceID: 19086}
+      Script: {instanceID: 19122}
     - Class: 114
-      Script: {instanceID: 19390}
+      Script: {instanceID: 19428}
     - Class: 114
-      Script: {instanceID: 20184}
+      Script: {instanceID: 19736}
     - Class: 114
-      Script: {instanceID: 20234}
+      Script: {instanceID: 20224}
     - Class: 114
-      Script: {instanceID: 20296}
+      Script: {instanceID: 20240}
     - Class: 114
-      Script: {instanceID: 20364}
+      Script: {instanceID: 20276}
     - Class: 114
-      Script: {instanceID: 20552}
+      Script: {instanceID: 20338}
     - Class: 114
-      Script: {instanceID: 20576}
+      Script: {instanceID: 20408}
     - Class: 114
-      Script: {instanceID: 21054}
+      Script: {instanceID: 20596}
     - Class: 114
-      Script: {instanceID: 21062}
+      Script: {instanceID: 20620}
     - Class: 114
-      Script: {instanceID: 21128}
+      Script: {instanceID: 21100}
     - Class: 114
-      Script: {instanceID: 21240}
+      Script: {instanceID: 21108}
     - Class: 114
-      Script: {instanceID: 21314}
+      Script: {instanceID: 21174}
     - Class: 114
-      Script: {instanceID: 21318}
+      Script: {instanceID: 21286}
     - Class: 114
-      Script: {instanceID: 21408}
+      Script: {instanceID: 21360}
     - Class: 114
-      Script: {instanceID: 21580}
+      Script: {instanceID: 21364}
     - Class: 114
-      Script: {instanceID: 21710}
+      Script: {instanceID: 21454}
     - Class: 114
-      Script: {instanceID: 21720}
+      Script: {instanceID: 21626}
     - Class: 114
-      Script: {instanceID: 21762}
+      Script: {instanceID: 21756}
     - Class: 114
-      Script: {instanceID: 21928}
+      Script: {instanceID: 21766}
     - Class: 114
-      Script: {instanceID: 21930}
+      Script: {instanceID: 21808}
     - Class: 114
-      Script: {instanceID: 22056}
+      Script: {instanceID: 21974}
     - Class: 114
-      Script: {instanceID: 22306}
+      Script: {instanceID: 21976}
     - Class: 114
-      Script: {instanceID: 22604}
+      Script: {instanceID: 22102}
     - Class: 114
-      Script: {instanceID: 22618}
+      Script: {instanceID: 22352}
     - Class: 114
-      Script: {instanceID: 22644}
+      Script: {instanceID: 22650}
     - Class: 114
-      Script: {instanceID: 22692}
+      Script: {instanceID: 22664}
     - Class: 114
-      Script: {instanceID: 22834}
+      Script: {instanceID: 22690}
     - Class: 114
-      Script: {instanceID: 22884}
+      Script: {instanceID: 22738}
     - Class: 114
-      Script: {instanceID: 23378}
+      Script: {instanceID: 22880}
     - Class: 114
-      Script: {instanceID: 23648}
+      Script: {instanceID: 22930}
     - Class: 114
-      Script: {instanceID: 23724}
+      Script: {instanceID: 23426}
     - Class: 114
-      Script: {instanceID: 23866}
+      Script: {instanceID: 23696}
     - Class: 114
-      Script: {instanceID: 24078}
+      Script: {instanceID: 23772}
     - Class: 114
-      Script: {instanceID: 24166}
+      Script: {instanceID: 23914}
     - Class: 114
-      Script: {instanceID: 24242}
+      Script: {instanceID: 24126}
     - Class: 114
-      Script: {instanceID: 24266}
+      Script: {instanceID: 24214}
     - Class: 114
-      Script: {instanceID: 24640}
+      Script: {instanceID: 24290}
     - Class: 114
-      Script: {instanceID: 24674}
+      Script: {instanceID: 24314}
     - Class: 114
-      Script: {instanceID: 24942}
+      Script: {instanceID: 24688}
     - Class: 114
-      Script: {instanceID: 25010}
+      Script: {instanceID: 24722}
     - Class: 114
-      Script: {instanceID: 25082}
+      Script: {instanceID: 24990}
     - Class: 114
-      Script: {instanceID: 25212}
+      Script: {instanceID: 25058}
     - Class: 114
-      Script: {instanceID: 25216}
+      Script: {instanceID: 25130}
     - Class: 114
-      Script: {instanceID: 25354}
+      Script: {instanceID: 25260}
     - Class: 114
-      Script: {instanceID: 25460}
+      Script: {instanceID: 25264}
     - Class: 114
-      Script: {instanceID: 25482}
+      Script: {instanceID: 25402}
     - Class: 114
-      Script: {instanceID: 25600}
+      Script: {instanceID: 25508}
     - Class: 114
-      Script: {instanceID: 25714}
+      Script: {instanceID: 25530}
     - Class: 114
-      Script: {instanceID: 25784}
+      Script: {instanceID: 25648}
     - Class: 114
-      Script: {instanceID: 26392}
+      Script: {instanceID: 25762}
     - Class: 114
-      Script: {instanceID: 26430}
+      Script: {instanceID: 25832}
     - Class: 114
-      Script: {instanceID: 26456}
+      Script: {instanceID: 26440}
     - Class: 114
-      Script: {instanceID: 26510}
+      Script: {instanceID: 26478}
     - Class: 114
-      Script: {instanceID: 26716}
+      Script: {instanceID: 26504}
     - Class: 114
-      Script: {instanceID: 26990}
+      Script: {instanceID: 26560}
     - Class: 114
-      Script: {instanceID: 26994}
+      Script: {instanceID: 26766}
     - Class: 114
-      Script: {instanceID: 27292}
+      Script: {instanceID: 26998}
     - Class: 114
-      Script: {instanceID: 27456}
+      Script: {instanceID: 27042}
     - Class: 114
-      Script: {instanceID: 27564}
+      Script: {instanceID: 27046}
     - Class: 114
-      Script: {instanceID: 27654}
+      Script: {instanceID: 27344}
     - Class: 114
-      Script: {instanceID: 27794}
+      Script: {instanceID: 27506}
     - Class: 114
-      Script: {instanceID: 27938}
+      Script: {instanceID: 27614}
     - Class: 114
-      Script: {instanceID: 28240}
+      Script: {instanceID: 27704}
     - Class: 114
-      Script: {instanceID: 28258}
+      Script: {instanceID: 27844}
     - Class: 114
-      Script: {instanceID: 29004}
+      Script: {instanceID: 27988}
     - Class: 114
-      Script: {instanceID: 29058}
+      Script: {instanceID: 28290}
     - Class: 114
-      Script: {instanceID: 76310}
+      Script: {instanceID: 28308}
     - Class: 114
-      Script: {instanceID: 76334}
+      Script: {instanceID: 29056}
     - Class: 114
-      Script: {instanceID: 76350}
+      Script: {instanceID: 29110}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -619,6 +614,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime
     namespaceName: UnityEngine.Rendering.Universal
     className: UniversalRenderPipelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 09409ba91b70d0a690ada61f64e84252
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FirstPersonMovement
   - hash:
       serializedVersion: 2
       Hash: d41ab9b5ea92474f9c0a6937a0607ce1
@@ -819,6 +820,12 @@ ScriptsOnlyBuild:
     className: XRJoystick
   - hash:
       serializedVersion: 2
+      Hash: 5e5e5f383458331032a92a60c3d97b99
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WFX_Demo
+  - hash:
+      serializedVersion: 2
       Hash: 158ea04b653ef20da50f27da42170155
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering
@@ -909,6 +916,12 @@ ScriptsOnlyBuild:
     className: MoveWithVelocity
   - hash:
       serializedVersion: 2
+      Hash: 5506913cda5ee90459103b59a9551beb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CFX_SpawnSystem
+  - hash:
+      serializedVersion: 2
       Hash: 69a5e2329507f9682077542082bf2979
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -985,6 +998,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 0112fe43485881e08f5271b57a6b72de
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CFX_AutoStopLoopedEffect
   - hash:
       serializedVersion: 2
       Hash: 6d394de691f6d0187f61c08889353d0e
@@ -1101,6 +1120,12 @@ ScriptsOnlyBuild:
     className: ScriptMachine
   - hash:
       serializedVersion: 2
+      Hash: 7dece53a38c976c9d98ba40f09339db3
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WFX_BulletHoleDecal
+  - hash:
+      serializedVersion: 2
       Hash: 43ebd945b04bced376c791411cf5a289
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1117,6 +1142,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FadeCanvasOnOverlap
+  - hash:
+      serializedVersion: 2
+      Hash: 32ca4f963a431bb73681993a135ce29d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CFX_Demo_RandomDir
   - hash:
       serializedVersion: 2
       Hash: 006cf428550f7af7c78bbd72b6f9c495
@@ -1257,6 +1288,12 @@ ScriptsOnlyBuild:
     className: InputActionDebuggerWindow
   - hash:
       serializedVersion: 2
+      Hash: 715e0da17ee29b8bd944f783053995e0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WFX_Demo_Wall
+  - hash:
+      serializedVersion: 2
       Hash: db21ebef3134937e4ed21a40eaa3a860
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1339,6 +1376,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: TMPro_InstructionOverlay
+  - hash:
+      serializedVersion: 2
+      Hash: e5583043d9f603a5c021e2c250fec6bd
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CFX_AutoDestructShuriken
   - hash:
       serializedVersion: 2
       Hash: a75a568ce902366f4e82fc98ca6108f5
@@ -1449,6 +1492,12 @@ ScriptsOnlyBuild:
     className: TransitionArmModel
   - hash:
       serializedVersion: 2
+      Hash: 94fc5402eaeba57679f9fa3e205ac996
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WFX_Demo_DeleteAfterDelay
+  - hash:
+      serializedVersion: 2
       Hash: 10c17b309bdca62b4d7fbaf113ed4ca0
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1489,6 +1538,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionEnter2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: a42ede32df699da375e150c5b08a5198
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WFX_Demo_RandomDir
   - hash:
       serializedVersion: 2
       Hash: 5f70b16cd9acc9c1dd88b51b6ed89669
@@ -2209,6 +2264,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionStayMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: ceba278e545a6a641ec7f5c11acb938b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CFX_LightIntensityFade
   - hash:
       serializedVersion: 2
       Hash: addad52c22ce96635de75d120f75d898
@@ -3003,6 +3064,12 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerVector3
   - hash:
       serializedVersion: 2
+      Hash: 55667a7b42af057d289c784ad9fd425c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CFX_Demo_RotateCamera
+  - hash:
+      serializedVersion: 2
       Hash: 0c0b64d103fe555d830e8ca206abd12a
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -3075,6 +3142,12 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
+      Hash: 5277fb414ad9de65a8ee17083dd9456d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WFX_LightFlicker
+  - hash:
+      serializedVersion: 2
       Hash: 6cf63e9dc888f92a3672d2e4db631c8e
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.Editor
@@ -3145,12 +3218,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives
     className: Vector2AffordanceReceiver
-  - hash:
-      serializedVersion: 2
-      Hash: 09409ba91b70d0a690ada61f64e84252
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: FirstPersonMovement
   - hash:
       serializedVersion: 2
       Hash: b71680be5fcafa98e1f2ee4abd69ab57
@@ -3441,6 +3508,12 @@ ScriptsOnlyBuild:
     className: XRDeviceSimulatorHandsUI
   - hash:
       serializedVersion: 2
+      Hash: f870092ec29000e188590c10296adcb2
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CFX_Demo_Translate
+  - hash:
+      serializedVersion: 2
       Hash: 4aa75eebe5b8b3bd362b4adcad58df8f
     assemblyName: Unity.XR.OpenXR.Features.MockRuntime
     namespaceName: UnityEngine.XR.OpenXR.Features.Mock
@@ -3609,6 +3682,12 @@ ScriptsOnlyBuild:
     className: Vector4MaterialPropertyAffordanceReceiver
   - hash:
       serializedVersion: 2
+      Hash: a320abfac19aa0f57698e2c7d58cf46b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WFX_Demo_New
+  - hash:
+      serializedVersion: 2
       Hash: cd26ed26142434f1754256913b8c5ecd
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -3631,91 +3710,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: ceba278e545a6a641ec7f5c11acb938b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CFX_LightIntensityFade
-  - hash:
-      serializedVersion: 2
-      Hash: 5e5e5f383458331032a92a60c3d97b99
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: WFX_Demo
-  - hash:
-      serializedVersion: 2
-      Hash: a42ede32df699da375e150c5b08a5198
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: WFX_Demo_RandomDir
-  - hash:
-      serializedVersion: 2
-      Hash: 5277fb414ad9de65a8ee17083dd9456d
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: WFX_LightFlicker
-  - hash:
-      serializedVersion: 2
-      Hash: 32ca4f963a431bb73681993a135ce29d
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CFX_Demo_RandomDir
-  - hash:
-      serializedVersion: 2
-      Hash: 55667a7b42af057d289c784ad9fd425c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CFX_Demo_RotateCamera
-  - hash:
-      serializedVersion: 2
-      Hash: 7dece53a38c976c9d98ba40f09339db3
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: WFX_BulletHoleDecal
-  - hash:
-      serializedVersion: 2
-      Hash: 0112fe43485881e08f5271b57a6b72de
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CFX_AutoStopLoopedEffect
-  - hash:
-      serializedVersion: 2
-      Hash: a320abfac19aa0f57698e2c7d58cf46b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: WFX_Demo_New
-  - hash:
-      serializedVersion: 2
-      Hash: 94fc5402eaeba57679f9fa3e205ac996
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: WFX_Demo_DeleteAfterDelay
-  - hash:
-      serializedVersion: 2
-      Hash: 5506913cda5ee90459103b59a9551beb
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CFX_SpawnSystem
-  - hash:
-      serializedVersion: 2
-      Hash: f870092ec29000e188590c10296adcb2
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CFX_Demo_Translate
-  - hash:
-      serializedVersion: 2
-      Hash: 715e0da17ee29b8bd944f783053995e0
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: WFX_Demo_Wall
-  - hash:
-      serializedVersion: 2
-      Hash: e5583043d9f603a5c021e2c250fec6bd
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CFX_AutoDestructShuriken
   platform: 13
   scenePathNames:
   - Assets/Scenes/TestingScene.unity
-  playerPath: D:/Logikos schemos/VR_Gunjack/VR Room/Builds/version 01.apk
+  playerPath: D:/Logikos schemos/VR_Gunjack/VR Room/Builds/version 02.apk

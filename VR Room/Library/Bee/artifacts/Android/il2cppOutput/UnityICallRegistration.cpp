@@ -6892,14 +6892,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.XR.InputTracking
 
-	//Start Registrations for type : UnityEngine.XR.Provider.XRStats
-
-		//System.Boolean UnityEngine.XR.Provider.XRStats::TryGetStat_Internal(System.IntPtr,System.String,System.Single&)
-		void Register_UnityEngine_XR_Provider_XRStats_TryGetStat_Internal();
-		Register_UnityEngine_XR_Provider_XRStats_TryGetStat_Internal();
-
-	//End Registrations for type : UnityEngine.XR.Provider.XRStats
-
 	//Start Registrations for type : UnityEngine.XR.XRDevice
 
 		//System.Void UnityEngine.XR.XRDevice::DisableAutoXRCameraTracking(UnityEngine.Camera,System.Boolean)
@@ -6933,22 +6925,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.XR.XRDisplaySubsystem::Internal_TryGetRenderPass(System.Int32,UnityEngine.XR.XRDisplaySubsystem/XRRenderPass&)
 		void Register_UnityEngine_XR_XRDisplaySubsystem_Internal_TryGetRenderPass();
 		Register_UnityEngine_XR_XRDisplaySubsystem_Internal_TryGetRenderPass();
-
-		//System.Boolean UnityEngine.XR.XRDisplaySubsystem::TryGetAppGPUTimeLastFrame(System.Single&)
-		void Register_UnityEngine_XR_XRDisplaySubsystem_TryGetAppGPUTimeLastFrame();
-		Register_UnityEngine_XR_XRDisplaySubsystem_TryGetAppGPUTimeLastFrame();
-
-		//System.Boolean UnityEngine.XR.XRDisplaySubsystem::TryGetCompositorGPUTimeLastFrame(System.Single&)
-		void Register_UnityEngine_XR_XRDisplaySubsystem_TryGetCompositorGPUTimeLastFrame();
-		Register_UnityEngine_XR_XRDisplaySubsystem_TryGetCompositorGPUTimeLastFrame();
-
-		//System.Boolean UnityEngine.XR.XRDisplaySubsystem::TryGetDisplayRefreshRate(System.Single&)
-		void Register_UnityEngine_XR_XRDisplaySubsystem_TryGetDisplayRefreshRate();
-		Register_UnityEngine_XR_XRDisplaySubsystem_TryGetDisplayRefreshRate();
-
-		//System.Boolean UnityEngine.XR.XRDisplaySubsystem::TryGetMotionToPhoton(System.Single&)
-		void Register_UnityEngine_XR_XRDisplaySubsystem_TryGetMotionToPhoton();
-		Register_UnityEngine_XR_XRDisplaySubsystem_TryGetMotionToPhoton();
 
 		//System.Int32 UnityEngine.XR.XRDisplaySubsystem::GetPreferredMirrorBlitMode()
 		void Register_UnityEngine_XR_XRDisplaySubsystem_GetPreferredMirrorBlitMode();

@@ -57,7 +57,7 @@ extern void SubsystemWithProvider_get_running_m6BF31FC3BDA38C56C0F60FEA37767A415
 extern void SubsystemWithProvider_set_running_mBEF44DA55F99B873A21E2003CDE06981E0348477 (void);
 extern void SubsystemWithProvider_get_providerBase_m8229B40F322D44A2E22B0AD62C581D284813410A (void);
 extern void SubsystemWithProvider__ctor_m7AAC2F13A01D674BF5040F42A08C88611FE60914 (void);
-static Il2CppMethodPointer s_methodPointers[71] = 
+static Il2CppMethodPointer s_methodPointers[70] = 
 {
 	NULL,
 	NULL,
@@ -72,7 +72,6 @@ static Il2CppMethodPointer s_methodPointers[71] =
 	IntegratedSubsystem_get_valid_m6537B83457B7E79D9743A0EA9144BD116B0E850B,
 	IntegratedSubsystem_IsRunning_m6AF6106D2DA0A840DBA7D52E9D5F373658B66009,
 	IntegratedSubsystem__ctor_m8A0E82CAFC72287502DB0158488C98831B2DF405,
-	NULL,
 	NULL,
 	SubsystemBindings_DestroySubsystem_m601801D653E84DE619656D06A61357F3C9BC7456,
 	IntegratedSubsystemDescriptor_get_id_m89DBA940C79ED7EFE1137E3EC4A5A53BF7052F15,
@@ -131,7 +130,7 @@ static Il2CppMethodPointer s_methodPointers[71] =
 	SubsystemWithProvider_get_providerBase_m8229B40F322D44A2E22B0AD62C581D284813410A,
 	SubsystemWithProvider__ctor_m7AAC2F13A01D674BF5040F42A08C88611FE60914,
 };
-static const int32_t s_InvokerIndices[71] = 
+static const int32_t s_InvokerIndices[70] = 
 {
 	0,
 	0,
@@ -147,8 +146,7 @@ static const int32_t s_InvokerIndices[71] =
 	7808,
 	8073,
 	0,
-	0,
-	12265,
+	12261,
 	7931,
 	7931,
 	0,
@@ -156,8 +154,8 @@ static const int32_t s_InvokerIndices[71] =
 	0,
 	0,
 	0,
-	11939,
-	12023,
+	11935,
+	12019,
 	0,
 	0,
 	8073,
@@ -167,29 +165,29 @@ static const int32_t s_InvokerIndices[71] =
 	7931,
 	0,
 	8073,
-	12267,
-	12534,
-	12534,
-	11412,
-	12534,
-	12534,
-	12534,
+	12263,
+	12528,
+	12528,
+	11409,
+	12528,
+	12528,
+	12528,
 	0,
 	0,
 	0,
-	12023,
-	12265,
-	11793,
+	12019,
+	12261,
+	11789,
 	0,
-	11793,
-	11412,
-	12534,
-	12267,
+	11789,
+	11409,
+	12528,
+	12263,
 	0,
 	0,
 	0,
-	12267,
-	12534,
+	12263,
+	12528,
 	7931,
 	0,
 	7931,
@@ -205,19 +203,17 @@ static const int32_t s_InvokerIndices[71] =
 	7931,
 	8073,
 };
-static const Il2CppTokenRangePair s_rgctxIndices[9] = 
+static const Il2CppTokenRangePair s_rgctxIndices[8] = 
 {
-	{ 0x02000005, { 0, 1 } },
-	{ 0x02000008, { 1, 2 } },
-	{ 0x0600002A, { 3, 2 } },
-	{ 0x0600002B, { 5, 5 } },
-	{ 0x0600002C, { 10, 11 } },
-	{ 0x06000030, { 21, 2 } },
-	{ 0x06000035, { 23, 5 } },
-	{ 0x06000036, { 28, 11 } },
-	{ 0x06000037, { 39, 9 } },
+	{ 0x02000008, { 0, 2 } },
+	{ 0x06000029, { 2, 2 } },
+	{ 0x0600002A, { 4, 5 } },
+	{ 0x0600002B, { 9, 11 } },
+	{ 0x0600002F, { 20, 2 } },
+	{ 0x06000034, { 22, 5 } },
+	{ 0x06000035, { 27, 11 } },
+	{ 0x06000036, { 38, 9 } },
 };
-extern const uint32_t g_rgctx_TSubsystemDescriptor_t59C3F2B01B7FD365079268A90FA6EFF650F91FD9;
 extern const uint32_t g_rgctx_IntegratedSubsystemDescriptor_1_Create_m5973E509BE85C79B944AADEE93FD6D6E80940FE8;
 extern const uint32_t g_rgctx_TSubsystem_t75D38629E5B58BB4C8423B2F494B75E5F4509F1B;
 extern const uint32_t g_rgctx_List_1_t756D87A29C46D7F54BCF78323C3BE01F1DF1D882;
@@ -265,9 +261,8 @@ extern const Il2CppRGCTXConstrainedData g_rgctx_TDescriptor_tD5C1BF59BFFF7F69AC9
 extern const uint32_t g_rgctx_List_1_set_Item_m58B49CD878D3DC099EB422A63AB014DF5B1CAE06;
 extern const uint32_t g_rgctx_List_1_get_Count_mC3BAEE88ADF85DEC0CA10B97B3E7F42183A8AFBB;
 extern const uint32_t g_rgctx_List_1_Add_m99E6BCF557EB89898061B9B8761AA6D402DD2592;
-static const Il2CppRGCTXDefinition s_rgctxValues[48] = 
+static const Il2CppRGCTXDefinition s_rgctxValues[47] = 
 {
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TSubsystemDescriptor_t59C3F2B01B7FD365079268A90FA6EFF650F91FD9 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_IntegratedSubsystemDescriptor_1_Create_m5973E509BE85C79B944AADEE93FD6D6E80940FE8 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TSubsystem_t75D38629E5B58BB4C8423B2F494B75E5F4509F1B },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_List_1_t756D87A29C46D7F54BCF78323C3BE01F1DF1D882 },
@@ -320,16 +315,16 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_SubsystemsModule_CodeGen
 const Il2CppCodeGenModule g_UnityEngine_SubsystemsModule_CodeGenModule = 
 {
 	"UnityEngine.SubsystemsModule.dll",
-	71,
+	70,
 	s_methodPointers,
 	0,
 	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,
-	9,
+	8,
 	s_rgctxIndices,
-	48,
+	47,
 	s_rgctxValues,
 	NULL,
 	NULL,
