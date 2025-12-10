@@ -3216,6 +3216,278 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Internal.InputUnsafeUtility
 
+	//Start Registrations for type : UnityEngine.Yoga.Native
+
+		//System.Boolean UnityEngine.Yoga.Native::YGConfigGetUseWebDefaults(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGConfigGetUseWebDefaults();
+		Register_UnityEngine_Yoga_Native_YGConfigGetUseWebDefaults();
+
+		//System.Boolean UnityEngine.Yoga.Native::YGNodeGetHasNewLayout(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeGetHasNewLayout();
+		Register_UnityEngine_Yoga_Native_YGNodeGetHasNewLayout();
+
+		//System.Boolean UnityEngine.Yoga.Native::YGNodeIsDirty(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeIsDirty();
+		Register_UnityEngine_Yoga_Native_YGNodeIsDirty();
+
+		//System.IntPtr UnityEngine.Yoga.Native::YGConfigGetDefault()
+		void Register_UnityEngine_Yoga_Native_YGConfigGetDefault();
+		Register_UnityEngine_Yoga_Native_YGConfigGetDefault();
+
+		//System.IntPtr UnityEngine.Yoga.Native::YGConfigNew()
+		void Register_UnityEngine_Yoga_Native_YGConfigNew();
+		Register_UnityEngine_Yoga_Native_YGConfigNew();
+
+		//System.IntPtr UnityEngine.Yoga.Native::YGNodeNewWithConfig(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeNewWithConfig();
+		Register_UnityEngine_Yoga_Native_YGNodeNewWithConfig();
+
+		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetBorder(System.IntPtr,UnityEngine.Yoga.YogaEdge)
+		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetBorder();
+		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetBorder();
+
+		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetBottom(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetBottom();
+		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetBottom();
+
+		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetHeight(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetHeight();
+		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetHeight();
+
+		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetLeft(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetLeft();
+		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetLeft();
+
+		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetMargin(System.IntPtr,UnityEngine.Yoga.YogaEdge)
+		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetMargin();
+		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetMargin();
+
+		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetPadding(System.IntPtr,UnityEngine.Yoga.YogaEdge)
+		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetPadding();
+		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetPadding();
+
+		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetRight(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetRight();
+		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetRight();
+
+		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetTop(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetTop();
+		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetTop();
+
+		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetWidth(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetWidth();
+		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetWidth();
+
+		//System.Void UnityEngine.Yoga.Native::YGConfigFreeInternal(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGConfigFreeInternal();
+		Register_UnityEngine_Yoga_Native_YGConfigFreeInternal();
+
+		//System.Void UnityEngine.Yoga.Native::YGConfigSetPointScaleFactor(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGConfigSetPointScaleFactor();
+		Register_UnityEngine_Yoga_Native_YGConfigSetPointScaleFactor();
+
+		//System.Void UnityEngine.Yoga.Native::YGConfigSetUseWebDefaults(System.IntPtr,System.Boolean)
+		void Register_UnityEngine_Yoga_Native_YGConfigSetUseWebDefaults();
+		Register_UnityEngine_Yoga_Native_YGConfigSetUseWebDefaults();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeCalculateLayout(System.IntPtr,System.Single,System.Single,UnityEngine.Yoga.YogaDirection)
+		void Register_UnityEngine_Yoga_Native_YGNodeCalculateLayout();
+		Register_UnityEngine_Yoga_Native_YGNodeCalculateLayout();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeCopyStyle(System.IntPtr,System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeCopyStyle();
+		Register_UnityEngine_Yoga_Native_YGNodeCopyStyle();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeFreeInternal(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeFreeInternal();
+		Register_UnityEngine_Yoga_Native_YGNodeFreeInternal();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeInsertChild(System.IntPtr,System.IntPtr,System.UInt32)
+		void Register_UnityEngine_Yoga_Native_YGNodeInsertChild();
+		Register_UnityEngine_Yoga_Native_YGNodeInsertChild();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeMarkDirty(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeMarkDirty();
+		Register_UnityEngine_Yoga_Native_YGNodeMarkDirty();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeRemoveChild(System.IntPtr,System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeRemoveChild();
+		Register_UnityEngine_Yoga_Native_YGNodeRemoveChild();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeRemoveMeasureFunc(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeRemoveMeasureFunc();
+		Register_UnityEngine_Yoga_Native_YGNodeRemoveMeasureFunc();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeSetConfig(System.IntPtr,System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeSetConfig();
+		Register_UnityEngine_Yoga_Native_YGNodeSetConfig();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeSetHasNewLayout(System.IntPtr,System.Boolean)
+		void Register_UnityEngine_Yoga_Native_YGNodeSetHasNewLayout();
+		Register_UnityEngine_Yoga_Native_YGNodeSetHasNewLayout();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeSetMeasureFunc(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeSetMeasureFunc();
+		Register_UnityEngine_Yoga_Native_YGNodeSetMeasureFunc();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetAlignContent(System.IntPtr,UnityEngine.Yoga.YogaAlign)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetAlignContent();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetAlignContent();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetAlignItems(System.IntPtr,UnityEngine.Yoga.YogaAlign)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetAlignItems();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetAlignItems();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetAlignSelf(System.IntPtr,UnityEngine.Yoga.YogaAlign)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetAlignSelf();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetAlignSelf();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetBorder(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetBorder();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetBorder();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetDisplay(System.IntPtr,UnityEngine.Yoga.YogaDisplay)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetDisplay();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetDisplay();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlex(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlex();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlex();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexBasis(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexBasis();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexBasis();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexBasisAuto(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexBasisAuto();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexBasisAuto();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexBasisPercent(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexBasisPercent();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexBasisPercent();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexDirection(System.IntPtr,UnityEngine.Yoga.YogaFlexDirection)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexDirection();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexDirection();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexGrow(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexGrow();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexGrow();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexShrink(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexShrink();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexShrink();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexWrap(System.IntPtr,UnityEngine.Yoga.YogaWrap)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexWrap();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexWrap();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetHeight(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetHeight();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetHeight();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetHeightAuto(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetHeightAuto();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetHeightAuto();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetHeightPercent(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetHeightPercent();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetHeightPercent();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetJustifyContent(System.IntPtr,UnityEngine.Yoga.YogaJustify)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetJustifyContent();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetJustifyContent();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMargin(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMargin();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMargin();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMarginAuto(System.IntPtr,UnityEngine.Yoga.YogaEdge)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMarginAuto();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMarginAuto();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMarginPercent(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMarginPercent();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMarginPercent();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMaxHeight(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxHeight();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxHeight();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMaxHeightPercent(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxHeightPercent();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxHeightPercent();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMaxWidth(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxWidth();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxWidth();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMaxWidthPercent(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxWidthPercent();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxWidthPercent();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMinHeight(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinHeight();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinHeight();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMinHeightPercent(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinHeightPercent();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinHeightPercent();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMinWidth(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinWidth();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinWidth();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMinWidthPercent(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinWidthPercent();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinWidthPercent();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetOverflow(System.IntPtr,UnityEngine.Yoga.YogaOverflow)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetOverflow();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetOverflow();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetPadding(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetPadding();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetPadding();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetPaddingPercent(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetPaddingPercent();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetPaddingPercent();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetPosition(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetPosition();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetPosition();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetPositionPercent(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetPositionPercent();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetPositionPercent();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetPositionType(System.IntPtr,UnityEngine.Yoga.YogaPositionType)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetPositionType();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetPositionType();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetWidth(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetWidth();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetWidth();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetWidthAuto(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetWidthAuto();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetWidthAuto();
+
+		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetWidthPercent(System.IntPtr,System.Single)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetWidthPercent();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleSetWidthPercent();
+
+		//System.Void UnityEngine.Yoga.Native::YGSetManagedObject(System.IntPtr,UnityEngine.Yoga.YogaNode)
+		void Register_UnityEngine_Yoga_Native_YGSetManagedObject();
+		Register_UnityEngine_Yoga_Native_YGSetManagedObject();
+
+		//UnityEngine.Yoga.YogaDirection UnityEngine.Yoga.Native::YGNodeStyleGetDirection(System.IntPtr)
+		void Register_UnityEngine_Yoga_Native_YGNodeStyleGetDirection();
+		Register_UnityEngine_Yoga_Native_YGNodeStyleGetDirection();
+
+	//End Registrations for type : UnityEngine.Yoga.Native
+
 	//Start Registrations for type : UnityEngine.Jobs.TransformAccess
 
 		//System.Void UnityEngine.Jobs.TransformAccess::GetLocalScale(UnityEngine.Jobs.TransformAccess&,UnityEngine.Vector3&)
@@ -5130,6 +5402,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_RenderSettings_get_fog();
 		Register_UnityEngine_RenderSettings_get_fog();
 
+		//System.Single UnityEngine.RenderSettings::get_ambientIntensity()
+		void Register_UnityEngine_RenderSettings_get_ambientIntensity();
+		Register_UnityEngine_RenderSettings_get_ambientIntensity();
+
 		//System.Single UnityEngine.RenderSettings::get_reflectionIntensity()
 		void Register_UnityEngine_RenderSettings_get_reflectionIntensity();
 		Register_UnityEngine_RenderSettings_get_reflectionIntensity();
@@ -5153,6 +5429,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.RenderSettings::get_subtractiveShadowColor_Injected(UnityEngine.Color&)
 		void Register_UnityEngine_RenderSettings_get_subtractiveShadowColor_Injected();
 		Register_UnityEngine_RenderSettings_get_subtractiveShadowColor_Injected();
+
+		//System.Void UnityEngine.RenderSettings::set_ambientIntensity(System.Single)
+		void Register_UnityEngine_RenderSettings_set_ambientIntensity();
+		Register_UnityEngine_RenderSettings_set_ambientIntensity();
 
 		//UnityEngine.Light UnityEngine.RenderSettings::get_sun()
 		void Register_UnityEngine_RenderSettings_get_sun();
@@ -5462,6 +5742,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_SceneManagement_Scene_IsValidInternal();
 		Register_UnityEngine_SceneManagement_Scene_IsValidInternal();
 
+		//System.Int32 UnityEngine.SceneManagement.Scene::GetBuildIndexInternal(System.Int32)
+		void Register_UnityEngine_SceneManagement_Scene_GetBuildIndexInternal();
+		Register_UnityEngine_SceneManagement_Scene_GetBuildIndexInternal();
+
 		//System.Int32 UnityEngine.SceneManagement.Scene::GetRootCountInternal(System.Int32)
 		void Register_UnityEngine_SceneManagement_Scene_GetRootCountInternal();
 		Register_UnityEngine_SceneManagement_Scene_GetRootCountInternal();
@@ -5603,6 +5887,150 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Shader_set_globalRenderPipeline();
 
 	//End Registrations for type : UnityEngine.Shader
+
+	//Start Registrations for type : UnityEngine.SystemInfo
+
+		//System.Boolean UnityEngine.SystemInfo::GetGraphicsUVStartsAtTop()
+		void Register_UnityEngine_SystemInfo_GetGraphicsUVStartsAtTop();
+		Register_UnityEngine_SystemInfo_GetGraphicsUVStartsAtTop();
+
+		//System.Boolean UnityEngine.SystemInfo::HasHiddenSurfaceRemovalOnGPU()
+		void Register_UnityEngine_SystemInfo_HasHiddenSurfaceRemovalOnGPU();
+		Register_UnityEngine_SystemInfo_HasHiddenSurfaceRemovalOnGPU();
+
+		//System.Boolean UnityEngine.SystemInfo::HasRenderTextureNative(UnityEngine.RenderTextureFormat)
+		void Register_UnityEngine_SystemInfo_HasRenderTextureNative();
+		Register_UnityEngine_SystemInfo_HasRenderTextureNative();
+
+		//System.Boolean UnityEngine.SystemInfo::IsFormatSupported(UnityEngine.Experimental.Rendering.GraphicsFormat,UnityEngine.Experimental.Rendering.FormatUsage)
+		void Register_UnityEngine_SystemInfo_IsFormatSupported();
+		Register_UnityEngine_SystemInfo_IsFormatSupported();
+
+		//System.Boolean UnityEngine.SystemInfo::SupportsComputeShaders()
+		void Register_UnityEngine_SystemInfo_SupportsComputeShaders();
+		Register_UnityEngine_SystemInfo_SupportsComputeShaders();
+
+		//System.Boolean UnityEngine.SystemInfo::SupportsGPUFence()
+		void Register_UnityEngine_SystemInfo_SupportsGPUFence();
+		Register_UnityEngine_SystemInfo_SupportsGPUFence();
+
+		//System.Boolean UnityEngine.SystemInfo::SupportsInstancing()
+		void Register_UnityEngine_SystemInfo_SupportsInstancing();
+		Register_UnityEngine_SystemInfo_SupportsInstancing();
+
+		//System.Boolean UnityEngine.SystemInfo::SupportsMultisampleAutoResolve()
+		void Register_UnityEngine_SystemInfo_SupportsMultisampleAutoResolve();
+		Register_UnityEngine_SystemInfo_SupportsMultisampleAutoResolve();
+
+		//System.Boolean UnityEngine.SystemInfo::SupportsMultisampleResolveDepth()
+		void Register_UnityEngine_SystemInfo_SupportsMultisampleResolveDepth();
+		Register_UnityEngine_SystemInfo_SupportsMultisampleResolveDepth();
+
+		//System.Boolean UnityEngine.SystemInfo::SupportsMultisampleResolveStencil()
+		void Register_UnityEngine_SystemInfo_SupportsMultisampleResolveStencil();
+		Register_UnityEngine_SystemInfo_SupportsMultisampleResolveStencil();
+
+		//System.Boolean UnityEngine.SystemInfo::SupportsMultiview()
+		void Register_UnityEngine_SystemInfo_SupportsMultiview();
+		Register_UnityEngine_SystemInfo_SupportsMultiview();
+
+		//System.Boolean UnityEngine.SystemInfo::SupportsRenderTargetArrayIndexFromVertexShader()
+		void Register_UnityEngine_SystemInfo_SupportsRenderTargetArrayIndexFromVertexShader();
+		Register_UnityEngine_SystemInfo_SupportsRenderTargetArrayIndexFromVertexShader();
+
+		//System.Boolean UnityEngine.SystemInfo::SupportsShadows()
+		void Register_UnityEngine_SystemInfo_SupportsShadows();
+		Register_UnityEngine_SystemInfo_SupportsShadows();
+
+		//System.Boolean UnityEngine.SystemInfo::SupportsStoreAndResolveAction()
+		void Register_UnityEngine_SystemInfo_SupportsStoreAndResolveAction();
+		Register_UnityEngine_SystemInfo_SupportsStoreAndResolveAction();
+
+		//System.Boolean UnityEngine.SystemInfo::SupportsTextureFormatNative(UnityEngine.TextureFormat)
+		void Register_UnityEngine_SystemInfo_SupportsTextureFormatNative();
+		Register_UnityEngine_SystemInfo_SupportsTextureFormatNative();
+
+		//System.Boolean UnityEngine.SystemInfo::UsesLoadStoreActions()
+		void Register_UnityEngine_SystemInfo_UsesLoadStoreActions();
+		Register_UnityEngine_SystemInfo_UsesLoadStoreActions();
+
+		//System.Boolean UnityEngine.SystemInfo::UsesReversedZBuffer()
+		void Register_UnityEngine_SystemInfo_UsesReversedZBuffer();
+		Register_UnityEngine_SystemInfo_UsesReversedZBuffer();
+
+		//System.Int32 UnityEngine.SystemInfo::GetGraphicsShaderLevel()
+		void Register_UnityEngine_SystemInfo_GetGraphicsShaderLevel();
+		Register_UnityEngine_SystemInfo_GetGraphicsShaderLevel();
+
+		//System.Int32 UnityEngine.SystemInfo::GetMaxRenderTextureSize()
+		void Register_UnityEngine_SystemInfo_GetMaxRenderTextureSize();
+		Register_UnityEngine_SystemInfo_GetMaxRenderTextureSize();
+
+		//System.Int32 UnityEngine.SystemInfo::GetMaxTextureSize()
+		void Register_UnityEngine_SystemInfo_GetMaxTextureSize();
+		Register_UnityEngine_SystemInfo_GetMaxTextureSize();
+
+		//System.Int32 UnityEngine.SystemInfo::GetRenderTextureSupportedMSAASampleCount_Injected(UnityEngine.RenderTextureDescriptor&)
+		void Register_UnityEngine_SystemInfo_GetRenderTextureSupportedMSAASampleCount_Injected();
+		Register_UnityEngine_SystemInfo_GetRenderTextureSupportedMSAASampleCount_Injected();
+
+		//System.Int32 UnityEngine.SystemInfo::SupportedRenderTargetCount()
+		void Register_UnityEngine_SystemInfo_SupportedRenderTargetCount();
+		Register_UnityEngine_SystemInfo_SupportedRenderTargetCount();
+
+		//System.Int32 UnityEngine.SystemInfo::SupportsMultisampledTextures()
+		void Register_UnityEngine_SystemInfo_SupportsMultisampledTextures();
+		Register_UnityEngine_SystemInfo_SupportsMultisampledTextures();
+
+		//System.Int64 UnityEngine.SystemInfo::MaxGraphicsBufferSize()
+		void Register_UnityEngine_SystemInfo_MaxGraphicsBufferSize();
+		Register_UnityEngine_SystemInfo_MaxGraphicsBufferSize();
+
+		//System.String UnityEngine.SystemInfo::GetDeviceModel()
+		void Register_UnityEngine_SystemInfo_GetDeviceModel();
+		Register_UnityEngine_SystemInfo_GetDeviceModel();
+
+		//System.String UnityEngine.SystemInfo::GetGraphicsDeviceName()
+		void Register_UnityEngine_SystemInfo_GetGraphicsDeviceName();
+		Register_UnityEngine_SystemInfo_GetGraphicsDeviceName();
+
+		//System.String UnityEngine.SystemInfo::GetGraphicsDeviceVendor()
+		void Register_UnityEngine_SystemInfo_GetGraphicsDeviceVendor();
+		Register_UnityEngine_SystemInfo_GetGraphicsDeviceVendor();
+
+		//UnityEngine.DeviceType UnityEngine.SystemInfo::GetDeviceType()
+		void Register_UnityEngine_SystemInfo_GetDeviceType();
+		Register_UnityEngine_SystemInfo_GetDeviceType();
+
+		//UnityEngine.Experimental.Rendering.GraphicsFormat UnityEngine.SystemInfo::GetCompatibleFormat(UnityEngine.Experimental.Rendering.GraphicsFormat,UnityEngine.Experimental.Rendering.FormatUsage)
+		void Register_UnityEngine_SystemInfo_GetCompatibleFormat();
+		Register_UnityEngine_SystemInfo_GetCompatibleFormat();
+
+		//UnityEngine.Experimental.Rendering.GraphicsFormat UnityEngine.SystemInfo::GetGraphicsFormat(UnityEngine.Experimental.Rendering.DefaultFormat)
+		void Register_UnityEngine_SystemInfo_GetGraphicsFormat();
+		Register_UnityEngine_SystemInfo_GetGraphicsFormat();
+
+		//UnityEngine.HDRDisplaySupportFlags UnityEngine.SystemInfo::GetHDRDisplaySupportFlags()
+		void Register_UnityEngine_SystemInfo_GetHDRDisplaySupportFlags();
+		Register_UnityEngine_SystemInfo_GetHDRDisplaySupportFlags();
+
+		//UnityEngine.OperatingSystemFamily UnityEngine.SystemInfo::GetOperatingSystemFamily()
+		void Register_UnityEngine_SystemInfo_GetOperatingSystemFamily();
+		Register_UnityEngine_SystemInfo_GetOperatingSystemFamily();
+
+		//UnityEngine.Rendering.CopyTextureSupport UnityEngine.SystemInfo::GetCopyTextureSupport()
+		void Register_UnityEngine_SystemInfo_GetCopyTextureSupport();
+		Register_UnityEngine_SystemInfo_GetCopyTextureSupport();
+
+		//UnityEngine.Rendering.FoveatedRenderingCaps UnityEngine.SystemInfo::GetFoveatedRenderingCaps()
+		void Register_UnityEngine_SystemInfo_GetFoveatedRenderingCaps();
+		Register_UnityEngine_SystemInfo_GetFoveatedRenderingCaps();
+
+		//UnityEngine.Rendering.GraphicsDeviceType UnityEngine.SystemInfo::GetGraphicsDeviceType()
+		void Register_UnityEngine_SystemInfo_GetGraphicsDeviceType();
+		Register_UnityEngine_SystemInfo_GetGraphicsDeviceType();
+
+	//End Registrations for type : UnityEngine.SystemInfo
 
 	//Start Registrations for type : UnityEngine.SkinnedMeshRenderer
 
@@ -5767,150 +6195,6 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_SubsystemsImplementation_SubsystemDescriptorStore_ReportSingleSubsystemAnalytics();
 
 	//End Registrations for type : UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore
-
-	//Start Registrations for type : UnityEngine.SystemInfo
-
-		//System.Boolean UnityEngine.SystemInfo::GetGraphicsUVStartsAtTop()
-		void Register_UnityEngine_SystemInfo_GetGraphicsUVStartsAtTop();
-		Register_UnityEngine_SystemInfo_GetGraphicsUVStartsAtTop();
-
-		//System.Boolean UnityEngine.SystemInfo::HasHiddenSurfaceRemovalOnGPU()
-		void Register_UnityEngine_SystemInfo_HasHiddenSurfaceRemovalOnGPU();
-		Register_UnityEngine_SystemInfo_HasHiddenSurfaceRemovalOnGPU();
-
-		//System.Boolean UnityEngine.SystemInfo::HasRenderTextureNative(UnityEngine.RenderTextureFormat)
-		void Register_UnityEngine_SystemInfo_HasRenderTextureNative();
-		Register_UnityEngine_SystemInfo_HasRenderTextureNative();
-
-		//System.Boolean UnityEngine.SystemInfo::IsFormatSupported(UnityEngine.Experimental.Rendering.GraphicsFormat,UnityEngine.Experimental.Rendering.FormatUsage)
-		void Register_UnityEngine_SystemInfo_IsFormatSupported();
-		Register_UnityEngine_SystemInfo_IsFormatSupported();
-
-		//System.Boolean UnityEngine.SystemInfo::SupportsComputeShaders()
-		void Register_UnityEngine_SystemInfo_SupportsComputeShaders();
-		Register_UnityEngine_SystemInfo_SupportsComputeShaders();
-
-		//System.Boolean UnityEngine.SystemInfo::SupportsGPUFence()
-		void Register_UnityEngine_SystemInfo_SupportsGPUFence();
-		Register_UnityEngine_SystemInfo_SupportsGPUFence();
-
-		//System.Boolean UnityEngine.SystemInfo::SupportsInstancing()
-		void Register_UnityEngine_SystemInfo_SupportsInstancing();
-		Register_UnityEngine_SystemInfo_SupportsInstancing();
-
-		//System.Boolean UnityEngine.SystemInfo::SupportsMultisampleAutoResolve()
-		void Register_UnityEngine_SystemInfo_SupportsMultisampleAutoResolve();
-		Register_UnityEngine_SystemInfo_SupportsMultisampleAutoResolve();
-
-		//System.Boolean UnityEngine.SystemInfo::SupportsMultisampleResolveDepth()
-		void Register_UnityEngine_SystemInfo_SupportsMultisampleResolveDepth();
-		Register_UnityEngine_SystemInfo_SupportsMultisampleResolveDepth();
-
-		//System.Boolean UnityEngine.SystemInfo::SupportsMultisampleResolveStencil()
-		void Register_UnityEngine_SystemInfo_SupportsMultisampleResolveStencil();
-		Register_UnityEngine_SystemInfo_SupportsMultisampleResolveStencil();
-
-		//System.Boolean UnityEngine.SystemInfo::SupportsMultiview()
-		void Register_UnityEngine_SystemInfo_SupportsMultiview();
-		Register_UnityEngine_SystemInfo_SupportsMultiview();
-
-		//System.Boolean UnityEngine.SystemInfo::SupportsRenderTargetArrayIndexFromVertexShader()
-		void Register_UnityEngine_SystemInfo_SupportsRenderTargetArrayIndexFromVertexShader();
-		Register_UnityEngine_SystemInfo_SupportsRenderTargetArrayIndexFromVertexShader();
-
-		//System.Boolean UnityEngine.SystemInfo::SupportsShadows()
-		void Register_UnityEngine_SystemInfo_SupportsShadows();
-		Register_UnityEngine_SystemInfo_SupportsShadows();
-
-		//System.Boolean UnityEngine.SystemInfo::SupportsStoreAndResolveAction()
-		void Register_UnityEngine_SystemInfo_SupportsStoreAndResolveAction();
-		Register_UnityEngine_SystemInfo_SupportsStoreAndResolveAction();
-
-		//System.Boolean UnityEngine.SystemInfo::SupportsTextureFormatNative(UnityEngine.TextureFormat)
-		void Register_UnityEngine_SystemInfo_SupportsTextureFormatNative();
-		Register_UnityEngine_SystemInfo_SupportsTextureFormatNative();
-
-		//System.Boolean UnityEngine.SystemInfo::UsesLoadStoreActions()
-		void Register_UnityEngine_SystemInfo_UsesLoadStoreActions();
-		Register_UnityEngine_SystemInfo_UsesLoadStoreActions();
-
-		//System.Boolean UnityEngine.SystemInfo::UsesReversedZBuffer()
-		void Register_UnityEngine_SystemInfo_UsesReversedZBuffer();
-		Register_UnityEngine_SystemInfo_UsesReversedZBuffer();
-
-		//System.Int32 UnityEngine.SystemInfo::GetGraphicsShaderLevel()
-		void Register_UnityEngine_SystemInfo_GetGraphicsShaderLevel();
-		Register_UnityEngine_SystemInfo_GetGraphicsShaderLevel();
-
-		//System.Int32 UnityEngine.SystemInfo::GetMaxRenderTextureSize()
-		void Register_UnityEngine_SystemInfo_GetMaxRenderTextureSize();
-		Register_UnityEngine_SystemInfo_GetMaxRenderTextureSize();
-
-		//System.Int32 UnityEngine.SystemInfo::GetMaxTextureSize()
-		void Register_UnityEngine_SystemInfo_GetMaxTextureSize();
-		Register_UnityEngine_SystemInfo_GetMaxTextureSize();
-
-		//System.Int32 UnityEngine.SystemInfo::GetRenderTextureSupportedMSAASampleCount_Injected(UnityEngine.RenderTextureDescriptor&)
-		void Register_UnityEngine_SystemInfo_GetRenderTextureSupportedMSAASampleCount_Injected();
-		Register_UnityEngine_SystemInfo_GetRenderTextureSupportedMSAASampleCount_Injected();
-
-		//System.Int32 UnityEngine.SystemInfo::SupportedRenderTargetCount()
-		void Register_UnityEngine_SystemInfo_SupportedRenderTargetCount();
-		Register_UnityEngine_SystemInfo_SupportedRenderTargetCount();
-
-		//System.Int32 UnityEngine.SystemInfo::SupportsMultisampledTextures()
-		void Register_UnityEngine_SystemInfo_SupportsMultisampledTextures();
-		Register_UnityEngine_SystemInfo_SupportsMultisampledTextures();
-
-		//System.Int64 UnityEngine.SystemInfo::MaxGraphicsBufferSize()
-		void Register_UnityEngine_SystemInfo_MaxGraphicsBufferSize();
-		Register_UnityEngine_SystemInfo_MaxGraphicsBufferSize();
-
-		//System.String UnityEngine.SystemInfo::GetDeviceModel()
-		void Register_UnityEngine_SystemInfo_GetDeviceModel();
-		Register_UnityEngine_SystemInfo_GetDeviceModel();
-
-		//System.String UnityEngine.SystemInfo::GetGraphicsDeviceName()
-		void Register_UnityEngine_SystemInfo_GetGraphicsDeviceName();
-		Register_UnityEngine_SystemInfo_GetGraphicsDeviceName();
-
-		//System.String UnityEngine.SystemInfo::GetGraphicsDeviceVendor()
-		void Register_UnityEngine_SystemInfo_GetGraphicsDeviceVendor();
-		Register_UnityEngine_SystemInfo_GetGraphicsDeviceVendor();
-
-		//UnityEngine.DeviceType UnityEngine.SystemInfo::GetDeviceType()
-		void Register_UnityEngine_SystemInfo_GetDeviceType();
-		Register_UnityEngine_SystemInfo_GetDeviceType();
-
-		//UnityEngine.Experimental.Rendering.GraphicsFormat UnityEngine.SystemInfo::GetCompatibleFormat(UnityEngine.Experimental.Rendering.GraphicsFormat,UnityEngine.Experimental.Rendering.FormatUsage)
-		void Register_UnityEngine_SystemInfo_GetCompatibleFormat();
-		Register_UnityEngine_SystemInfo_GetCompatibleFormat();
-
-		//UnityEngine.Experimental.Rendering.GraphicsFormat UnityEngine.SystemInfo::GetGraphicsFormat(UnityEngine.Experimental.Rendering.DefaultFormat)
-		void Register_UnityEngine_SystemInfo_GetGraphicsFormat();
-		Register_UnityEngine_SystemInfo_GetGraphicsFormat();
-
-		//UnityEngine.HDRDisplaySupportFlags UnityEngine.SystemInfo::GetHDRDisplaySupportFlags()
-		void Register_UnityEngine_SystemInfo_GetHDRDisplaySupportFlags();
-		Register_UnityEngine_SystemInfo_GetHDRDisplaySupportFlags();
-
-		//UnityEngine.OperatingSystemFamily UnityEngine.SystemInfo::GetOperatingSystemFamily()
-		void Register_UnityEngine_SystemInfo_GetOperatingSystemFamily();
-		Register_UnityEngine_SystemInfo_GetOperatingSystemFamily();
-
-		//UnityEngine.Rendering.CopyTextureSupport UnityEngine.SystemInfo::GetCopyTextureSupport()
-		void Register_UnityEngine_SystemInfo_GetCopyTextureSupport();
-		Register_UnityEngine_SystemInfo_GetCopyTextureSupport();
-
-		//UnityEngine.Rendering.FoveatedRenderingCaps UnityEngine.SystemInfo::GetFoveatedRenderingCaps()
-		void Register_UnityEngine_SystemInfo_GetFoveatedRenderingCaps();
-		Register_UnityEngine_SystemInfo_GetFoveatedRenderingCaps();
-
-		//UnityEngine.Rendering.GraphicsDeviceType UnityEngine.SystemInfo::GetGraphicsDeviceType()
-		void Register_UnityEngine_SystemInfo_GetGraphicsDeviceType();
-		Register_UnityEngine_SystemInfo_GetGraphicsDeviceType();
-
-	//End Registrations for type : UnityEngine.SystemInfo
 
 	//Start Registrations for type : UnityEngine.TextAsset
 
@@ -7059,278 +7343,6 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_XR_XRSettings_get_stereoRenderingMode();
 
 	//End Registrations for type : UnityEngine.XR.XRSettings
-
-	//Start Registrations for type : UnityEngine.Yoga.Native
-
-		//System.Boolean UnityEngine.Yoga.Native::YGConfigGetUseWebDefaults(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGConfigGetUseWebDefaults();
-		Register_UnityEngine_Yoga_Native_YGConfigGetUseWebDefaults();
-
-		//System.Boolean UnityEngine.Yoga.Native::YGNodeGetHasNewLayout(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeGetHasNewLayout();
-		Register_UnityEngine_Yoga_Native_YGNodeGetHasNewLayout();
-
-		//System.Boolean UnityEngine.Yoga.Native::YGNodeIsDirty(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeIsDirty();
-		Register_UnityEngine_Yoga_Native_YGNodeIsDirty();
-
-		//System.IntPtr UnityEngine.Yoga.Native::YGConfigGetDefault()
-		void Register_UnityEngine_Yoga_Native_YGConfigGetDefault();
-		Register_UnityEngine_Yoga_Native_YGConfigGetDefault();
-
-		//System.IntPtr UnityEngine.Yoga.Native::YGConfigNew()
-		void Register_UnityEngine_Yoga_Native_YGConfigNew();
-		Register_UnityEngine_Yoga_Native_YGConfigNew();
-
-		//System.IntPtr UnityEngine.Yoga.Native::YGNodeNewWithConfig(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeNewWithConfig();
-		Register_UnityEngine_Yoga_Native_YGNodeNewWithConfig();
-
-		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetBorder(System.IntPtr,UnityEngine.Yoga.YogaEdge)
-		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetBorder();
-		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetBorder();
-
-		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetBottom(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetBottom();
-		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetBottom();
-
-		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetHeight(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetHeight();
-		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetHeight();
-
-		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetLeft(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetLeft();
-		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetLeft();
-
-		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetMargin(System.IntPtr,UnityEngine.Yoga.YogaEdge)
-		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetMargin();
-		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetMargin();
-
-		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetPadding(System.IntPtr,UnityEngine.Yoga.YogaEdge)
-		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetPadding();
-		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetPadding();
-
-		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetRight(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetRight();
-		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetRight();
-
-		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetTop(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetTop();
-		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetTop();
-
-		//System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetWidth(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeLayoutGetWidth();
-		Register_UnityEngine_Yoga_Native_YGNodeLayoutGetWidth();
-
-		//System.Void UnityEngine.Yoga.Native::YGConfigFreeInternal(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGConfigFreeInternal();
-		Register_UnityEngine_Yoga_Native_YGConfigFreeInternal();
-
-		//System.Void UnityEngine.Yoga.Native::YGConfigSetPointScaleFactor(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGConfigSetPointScaleFactor();
-		Register_UnityEngine_Yoga_Native_YGConfigSetPointScaleFactor();
-
-		//System.Void UnityEngine.Yoga.Native::YGConfigSetUseWebDefaults(System.IntPtr,System.Boolean)
-		void Register_UnityEngine_Yoga_Native_YGConfigSetUseWebDefaults();
-		Register_UnityEngine_Yoga_Native_YGConfigSetUseWebDefaults();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeCalculateLayout(System.IntPtr,System.Single,System.Single,UnityEngine.Yoga.YogaDirection)
-		void Register_UnityEngine_Yoga_Native_YGNodeCalculateLayout();
-		Register_UnityEngine_Yoga_Native_YGNodeCalculateLayout();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeCopyStyle(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeCopyStyle();
-		Register_UnityEngine_Yoga_Native_YGNodeCopyStyle();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeFreeInternal(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeFreeInternal();
-		Register_UnityEngine_Yoga_Native_YGNodeFreeInternal();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeInsertChild(System.IntPtr,System.IntPtr,System.UInt32)
-		void Register_UnityEngine_Yoga_Native_YGNodeInsertChild();
-		Register_UnityEngine_Yoga_Native_YGNodeInsertChild();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeMarkDirty(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeMarkDirty();
-		Register_UnityEngine_Yoga_Native_YGNodeMarkDirty();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeRemoveChild(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeRemoveChild();
-		Register_UnityEngine_Yoga_Native_YGNodeRemoveChild();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeRemoveMeasureFunc(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeRemoveMeasureFunc();
-		Register_UnityEngine_Yoga_Native_YGNodeRemoveMeasureFunc();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeSetConfig(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeSetConfig();
-		Register_UnityEngine_Yoga_Native_YGNodeSetConfig();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeSetHasNewLayout(System.IntPtr,System.Boolean)
-		void Register_UnityEngine_Yoga_Native_YGNodeSetHasNewLayout();
-		Register_UnityEngine_Yoga_Native_YGNodeSetHasNewLayout();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeSetMeasureFunc(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeSetMeasureFunc();
-		Register_UnityEngine_Yoga_Native_YGNodeSetMeasureFunc();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetAlignContent(System.IntPtr,UnityEngine.Yoga.YogaAlign)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetAlignContent();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetAlignContent();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetAlignItems(System.IntPtr,UnityEngine.Yoga.YogaAlign)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetAlignItems();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetAlignItems();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetAlignSelf(System.IntPtr,UnityEngine.Yoga.YogaAlign)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetAlignSelf();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetAlignSelf();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetBorder(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetBorder();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetBorder();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetDisplay(System.IntPtr,UnityEngine.Yoga.YogaDisplay)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetDisplay();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetDisplay();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlex(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlex();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlex();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexBasis(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexBasis();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexBasis();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexBasisAuto(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexBasisAuto();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexBasisAuto();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexBasisPercent(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexBasisPercent();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexBasisPercent();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexDirection(System.IntPtr,UnityEngine.Yoga.YogaFlexDirection)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexDirection();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexDirection();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexGrow(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexGrow();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexGrow();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexShrink(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexShrink();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexShrink();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetFlexWrap(System.IntPtr,UnityEngine.Yoga.YogaWrap)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexWrap();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetFlexWrap();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetHeight(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetHeight();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetHeight();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetHeightAuto(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetHeightAuto();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetHeightAuto();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetHeightPercent(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetHeightPercent();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetHeightPercent();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetJustifyContent(System.IntPtr,UnityEngine.Yoga.YogaJustify)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetJustifyContent();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetJustifyContent();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMargin(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMargin();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMargin();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMarginAuto(System.IntPtr,UnityEngine.Yoga.YogaEdge)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMarginAuto();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMarginAuto();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMarginPercent(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMarginPercent();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMarginPercent();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMaxHeight(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxHeight();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxHeight();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMaxHeightPercent(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxHeightPercent();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxHeightPercent();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMaxWidth(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxWidth();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxWidth();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMaxWidthPercent(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxWidthPercent();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMaxWidthPercent();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMinHeight(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinHeight();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinHeight();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMinHeightPercent(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinHeightPercent();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinHeightPercent();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMinWidth(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinWidth();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinWidth();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetMinWidthPercent(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinWidthPercent();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetMinWidthPercent();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetOverflow(System.IntPtr,UnityEngine.Yoga.YogaOverflow)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetOverflow();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetOverflow();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetPadding(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetPadding();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetPadding();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetPaddingPercent(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetPaddingPercent();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetPaddingPercent();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetPosition(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetPosition();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetPosition();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetPositionPercent(System.IntPtr,UnityEngine.Yoga.YogaEdge,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetPositionPercent();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetPositionPercent();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetPositionType(System.IntPtr,UnityEngine.Yoga.YogaPositionType)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetPositionType();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetPositionType();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetWidth(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetWidth();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetWidth();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetWidthAuto(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetWidthAuto();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetWidthAuto();
-
-		//System.Void UnityEngine.Yoga.Native::YGNodeStyleSetWidthPercent(System.IntPtr,System.Single)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleSetWidthPercent();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleSetWidthPercent();
-
-		//System.Void UnityEngine.Yoga.Native::YGSetManagedObject(System.IntPtr,UnityEngine.Yoga.YogaNode)
-		void Register_UnityEngine_Yoga_Native_YGSetManagedObject();
-		Register_UnityEngine_Yoga_Native_YGSetManagedObject();
-
-		//UnityEngine.Yoga.YogaDirection UnityEngine.Yoga.Native::YGNodeStyleGetDirection(System.IntPtr)
-		void Register_UnityEngine_Yoga_Native_YGNodeStyleGetDirection();
-		Register_UnityEngine_Yoga_Native_YGNodeStyleGetDirection();
-
-	//End Registrations for type : UnityEngine.Yoga.Native
 
 	//Start Registrations for type : UnityEngineInternal.Input.NativeInputSystem
 

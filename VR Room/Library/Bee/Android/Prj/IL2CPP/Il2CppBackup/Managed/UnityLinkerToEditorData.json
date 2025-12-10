@@ -248,14 +248,6 @@
             "icon": null
           },
           {
-            "name": "LODGroup",
-            "scenes": [
-              "Assets/Scenes/TestingScene.unity"
-            ],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "LevelGameManager",
             "scenes": [
               "Assets/Scenes/TestingScene.unity"

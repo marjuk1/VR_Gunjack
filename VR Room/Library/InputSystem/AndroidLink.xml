@@ -17,8 +17,8 @@
     <type fullname="UnityEngine.InputSystem.Android.AndroidGamepadWithDpadAxes" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.Android.AndroidGamepadWithDpadButtons" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.Android.AndroidGameRotationVector" preserve="all"/>
-    <type fullname="UnityEngine.InputSystem.Android.AndroidGravitySensor" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.Android.AndroidGyroscope" preserve="all"/>
+    <type fullname="UnityEngine.InputSystem.Android.AndroidGravitySensor" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.Android.AndroidHingeAngle" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.Android.AndroidJoystick" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.Android.AndroidLightSensor" preserve="all"/>
@@ -71,8 +71,8 @@
     <type fullname="UnityEngine.InputSystem.FastMouse" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.FastTouchscreen" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.Gamepad" preserve="all"/>
-    <type fullname="UnityEngine.InputSystem.GravitySensor" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.Gyroscope" preserve="all"/>
+    <type fullname="UnityEngine.InputSystem.GravitySensor" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.HID.HID" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.HingeAngle" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.HumiditySensor" preserve="all"/>
@@ -103,8 +103,8 @@
     <type fullname="UnityEngine.InputSystem.LowLevel.AccelerometerState" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.LowLevel.AttitudeState" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.LowLevel.GamepadState" preserve="all"/>
-    <type fullname="UnityEngine.InputSystem.LowLevel.GravityState" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.LowLevel.GyroscopeState" preserve="all"/>
+    <type fullname="UnityEngine.InputSystem.LowLevel.GravityState" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.LowLevel.IInputStateTypeInfo" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.LowLevel.JoystickState" preserve="all"/>
     <type fullname="UnityEngine.InputSystem.LowLevel.KeyboardState" preserve="all"/>

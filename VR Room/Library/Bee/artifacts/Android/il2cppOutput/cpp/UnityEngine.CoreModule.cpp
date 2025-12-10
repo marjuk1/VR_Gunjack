@@ -3039,9 +3039,6 @@ struct IndexOutOfRangeException_t7ECB35264FB6CA8FAA516BD958F4B2ADC78E8A82  : pub
 struct InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
 {
 };
-struct LODGroup_tA4C4F98D3F698143BC7529146AB31A3D2EF24D9A  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
-{
-};
 struct MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
 };
@@ -26195,6 +26192,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 		return L_0;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RenderSettings_get_ambientIntensity_mEF613E4E650E851D9F273B1D07A8FBABD078968E (const RuntimeMethod* method) 
+{
+	typedef float (*RenderSettings_get_ambientIntensity_mEF613E4E650E851D9F273B1D07A8FBABD078968E_ftn) ();
+	static RenderSettings_get_ambientIntensity_mEF613E4E650E851D9F273B1D07A8FBABD078968E_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (RenderSettings_get_ambientIntensity_mEF613E4E650E851D9F273B1D07A8FBABD078968E_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.RenderSettings::get_ambientIntensity()");
+	float icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RenderSettings_set_ambientIntensity_m27875436E47E2D28C13F362DAE9C24D0DEC4A844 (float ___0_value, const RuntimeMethod* method) 
+{
+	typedef void (*RenderSettings_set_ambientIntensity_m27875436E47E2D28C13F362DAE9C24D0DEC4A844_ftn) (float);
+	static RenderSettings_set_ambientIntensity_m27875436E47E2D28C13F362DAE9C24D0DEC4A844_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (RenderSettings_set_ambientIntensity_m27875436E47E2D28C13F362DAE9C24D0DEC4A844_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.RenderSettings::set_ambientIntensity(System.Single)");
+	_il2cpp_icall_func(___0_value);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F RenderSettings_get_subtractiveShadowColor_m38589C45E2DB6DBA9DC96BDE7729171E0199B51C (const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
@@ -28715,14 +28729,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshRenderer__ctor_m5917B4C1F82E93248764
 		return;
 	}
 }
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

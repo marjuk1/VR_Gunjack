@@ -12,7 +12,7 @@ public class WaveManager : MonoBehaviour
 
     // Difficulty scaling
     public int enemiesPerWaveIncrease = 3;
-    public float spawnRateMultiplier = 0.92f; // spawns 8% faster each wave
+    public float spawnRateMultiplier = 0.92f;
     public float enemyHealthIncrease = 10f;
     public float enemySpeedIncrease = 0.2f;
 
@@ -21,7 +21,10 @@ public class WaveManager : MonoBehaviour
     private float spawnRate;
     public float EnemyDetectionRange = 5f;
 
-    private int enemiesAlive = 0;
+    // Time between waves
+    private float waveTimer = 0f;
+    public float waveInterval = 30f;
+
     private bool waveInProgress = false;
 
     void Awake()
@@ -40,14 +43,20 @@ public class WaveManager : MonoBehaviour
     }
     void Start()
     {
+        waveTimer = waveInterval;
         enemiesToSpawn = startingEnemyCount;
         spawnRate = startingSpawnRate;
     }
 
     void Update()
     {
-        if (!waveInProgress && enemiesAlive == 0)
+        waveTimer += Time.deltaTime;
+
+        if (!waveInProgress && waveTimer >= waveInterval)
+        {
             StartCoroutine(StartWave());
+            waveTimer = 0f;
+        }
     }
 
     IEnumerator StartWave()
@@ -56,8 +65,6 @@ public class WaveManager : MonoBehaviour
         currentWave++;
 
         Debug.Log("Starting Wave " + currentWave);
-
-        enemiesAlive = enemiesToSpawn;
 
         for (int i = 0; i < enemiesToSpawn; i++)
         {
@@ -70,13 +77,15 @@ public class WaveManager : MonoBehaviour
         // Apply difficulty scaling for next wave
         enemiesToSpawn += enemiesPerWaveIncrease;
         spawnRate *= spawnRateMultiplier;
-        if (spawnRate < 0.2f) spawnRate = 0.2f; // set a limit so it's not insane
+        spawnRate = Mathf.Clamp(spawnRate, 0.2f, 100f);
     }
 
+    [System.Obsolete]
     void SpawnEnemy()
     {
         Transform spawn = spawnPoints[Random.Range(0, spawnPoints.Length)];
         GameObject enemy = Instantiate(enemyPrefab, spawn.position, spawn.rotation);
+        enemy.SetActive(true);
 
         EnemyAIController ai = enemy.GetComponent<EnemyAIController>();
         if (ai != null)
@@ -85,10 +94,5 @@ public class WaveManager : MonoBehaviour
             ai.maxHealth += currentWave * enemyHealthIncrease;
             ai.agent.speed += currentWave * enemySpeedIncrease;
         }
-    }
-
-    public void OnEnemyKilled()
-    {
-        enemiesAlive--;
     }
 }

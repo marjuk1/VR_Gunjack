@@ -10,7 +10,7 @@ public class ScoreManager : MonoBehaviour
     [Header("Scoring")]
     public int currentScore = 0;
     public int winScore = 1000;
-    public int pointsPerKill = 100;
+    public int pointsPerKill = 50;
 
     [Header("UI")]
     public TextMeshProUGUI scoreText;

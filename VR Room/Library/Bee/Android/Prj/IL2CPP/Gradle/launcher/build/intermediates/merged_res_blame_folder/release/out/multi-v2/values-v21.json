@@ -4,7 +4,7 @@
             "outputFile": "com.com.Unity.CreateWithVR.VRRoom.launcher-mergeReleaseResources-3:/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "D:\\Logikos schemos\\VR_Gunjack\\VR Room\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\arnas\\Desktop\\VR_Gunjack\\VR Room\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -30,6 +30,12 @@ public class EnemyAIController : MonoBehaviour
     private bool isAttacking = false;
     private bool inAttackAnim = false;
 
+    [Header("Item spawning")]
+    public GameObject[] lootItems;
+    public float SpawnRate = 0.1f;
+    [Header("Scoring")]
+    public ScoreManager Scoremanager;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -54,27 +60,26 @@ public class EnemyAIController : MonoBehaviour
         playerHealth = FindObjectOfType<HealthManager>();
     }
 
+
     void Update()
     {
         if (isDead || player == null) return;
 
         float distance = Vector3.Distance(transform.position, player.position);
-        //Debug.Log(distance);
+
         if (distance > detectionRange)
         {
-            //Debug.Log($"{this.gameObject.name}: IDLE");
             Idle();
+            return;
         }
-        else if (distance < detectionRange && distance > attackRange)
+
+        if (distance > attackRange)
         {
-            //Debug.Log($"{this.gameObject.name}: MOVE TO PLAYER");
             MoveTowardsPlayer(distance);
+            return;
         }
-        else
-        {
-            //Debug.Log($"{this.gameObject.name}: ATTACK PLAYER");
-            AttackPlayer();
-        }
+
+        TryAttack();
     }
 
     private void MoveTowardsPlayer(float distance)
@@ -113,56 +118,38 @@ public class EnemyAIController : MonoBehaviour
         anim.SetBool("isRunning", false);
     }
 
-    private void AttackPlayer()
+    private void TryAttack()
     {
         if (isDead) return;
 
-        float distance = Vector3.Distance(transform.position, player.position);
+        // Always face player
+        Vector3 dir = (player.position - transform.position).normalized;
+        dir.y = 0;
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * rotationSpeed);
 
-        // Always face the player
-        Vector3 direction = (player.position - transform.position).normalized;
-        direction.y = 0;
-        Quaternion lookRotation = Quaternion.LookRotation(direction);
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed);
+        // Cooldown
+        if (Time.time - lastAttackTime < attackCooldown) return;
 
-        // If too far from target, move closer instead of attacking
-        if (distance > attackRange + 0.2f)
-        {
-            // Cancel attack state if currently in one
-            if (inAttackAnim)
-            {
-                isAttacking = false;
-                inAttackAnim = false;
-            }
+        // Trigger attack
+        lastAttackTime = Time.time;
+        anim.SetTrigger("isAttacking");
 
-            // Resume movement toward player
-            agent.isStopped = false;
-            MoveTowardsPlayer(distance);
-            return;
-        }
+        agent.isStopped = true;
+        agent.velocity = Vector3.zero;
 
-        // Attack only when in range and cooldown ready
-        if (!isAttacking && !inAttackAnim && Time.time - lastAttackTime >= attackCooldown)
-        {
-            lastAttackTime = Time.time;
-            isAttacking = true;
-            inAttackAnim = true;
+        StartCoroutine(FinishAttack());
+    }
+    IEnumerator FinishAttack()
+    {
+        // Deal damage at a consistent time
+        yield return new WaitForSeconds(0.35f);
 
-            agent.isStopped = true; // Stop to attack
-            agent.velocity = Vector3.zero;
+        if (playerHealth != null)
+            playerHealth.TakeDamage(attackDamage);
 
-            anim.SetTrigger("isAttacking");
-            anim.SetBool("isIdle", false);
-            anim.SetBool("isWalking", false);
-            anim.SetBool("isRunning", false);
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(attackDamage);
-                Debug.Log("Player damaged for: " + attackDamage);
-            }
-
-            StartCoroutine(EndAttackAfterDelay(1.2f)); // match your animation duration
-        }
+        // Reset state
+        yield return new WaitForSeconds(0.5f);
+        agent.isStopped = false;
     }
 
     private IEnumerator EndAttackAfterDelay(float delay)
@@ -210,13 +197,9 @@ public class EnemyAIController : MonoBehaviour
 
         Collider col = GetComponent<Collider>();
         if (col != null) col.enabled = false;
+        SpawnLoot();
+        Scoremanager.AddScoreOnKill();
 
-        if (ScoreManager.Instance != null)
-        {
-            ScoreManager.Instance.AddScoreOnKill();
-        }
-
-        FindObjectOfType<WaveManager>()?.OnEnemyKilled();
 
         Destroy(gameObject, GetAnimationLength("death1"));
     }
@@ -228,5 +211,42 @@ public class EnemyAIController : MonoBehaviour
                 return clip.length;
         }
         return 0f;
+    }
+    private void SpawnLoot()
+    {
+        if (lootItems.Length == 0) return;
+
+        if (Random.value <= SpawnRate)
+        {
+            int index = Random.Range(0, lootItems.Length);
+            GameObject lootPrefab = lootItems[index];
+
+            Vector3 offset = new Vector3(Random.Range(-0.5f, 0.5f), 0.1f, Random.Range(-0.5f, 0.5f));
+            GameObject spawnedLoot = Instantiate(lootPrefab, transform.position + offset, Quaternion.identity);
+
+            // Add AmmoTypeIdentifier dynamically
+            AmmoTypeIdentifier identifier = spawnedLoot.AddComponent<AmmoTypeIdentifier>();
+            AmmoBeltHelper helper = spawnedLoot.AddComponent<AmmoBeltHelper>();
+
+            // Example: determine type based on prefab name or array index
+            if (lootPrefab.name.Contains("Pistol"))
+                identifier.type = AmmoType.Pistol;
+            else if (lootPrefab.name.Contains("AKM"))
+                identifier.type = AmmoType.AKM;
+            else if(lootPrefab.name.Contains("RGD"))
+            identifier.type = AmmoType.Granade;
+
+            // Ensure XR grab is enabled if needed
+            var grab = spawnedLoot.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>();
+            if (grab != null) grab.enabled = true;
+
+            // Ensure Rigidbody is non-kinematic
+            Rigidbody rb = spawnedLoot.GetComponent<Rigidbody>();
+            if (rb != null) rb.isKinematic = false;
+        }
+    }
+    public void SetCurrentHealth(float value)
+    {
+        currentHealth = value;
     }
 }
