@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -35,6 +36,10 @@ public class EnemyAIController : MonoBehaviour
     public float SpawnRate = 0.1f;
     [Header("Scoring")]
     public ScoreManager Scoremanager;
+    [Header("Footsteps")]
+    public AudioSource footstepSource;
+    public AudioClip[] footstepClips;
+    public float footstepVolume = 0.7f;
 
     void Start()
     {
@@ -44,6 +49,9 @@ public class EnemyAIController : MonoBehaviour
         if(anim == null)
             anim = GetComponentInChildren<Animator>();
         currentHealth = maxHealth;
+
+        if (footstepSource == null)
+            footstepSource = GetComponent<AudioSource>();
 
 
         // Auto-find XR player rig
@@ -122,57 +130,79 @@ public class EnemyAIController : MonoBehaviour
     {
         if (isDead) return;
 
-        // Always face player
+        // Face player
         Vector3 dir = (player.position - transform.position).normalized;
         dir.y = 0;
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * rotationSpeed);
+        transform.rotation = Quaternion.Slerp(
+            transform.rotation,
+            Quaternion.LookRotation(dir),
+            Time.deltaTime * rotationSpeed
+        );
 
-        // Cooldown
+        // Cooldown check
         if (Time.time - lastAttackTime < attackCooldown) return;
 
-        // Trigger attack
         lastAttackTime = Time.time;
-        anim.SetTrigger("isAttacking");
 
         agent.isStopped = true;
         agent.velocity = Vector3.zero;
 
-        StartCoroutine(FinishAttack());
+        anim.SetTrigger("isAttacking");
     }
-    IEnumerator FinishAttack()
+    public void EndAttack()
     {
-        // Deal damage at a consistent time
-        yield return new WaitForSeconds(0.35f);
+        if (isDead) return;
 
-        if (playerHealth != null)
-            playerHealth.TakeDamage(attackDamage);
-
-        // Reset state
-        yield return new WaitForSeconds(0.5f);
         agent.isStopped = false;
     }
+    // IEnumerator FinishAttack()
+    // {
+    //     // Deal damage at a consistent time
+    //     yield return new WaitForSeconds(0.35f);
 
-    private IEnumerator EndAttackAfterDelay(float delay)
+    //     // if (playerHealth != null)
+    //     //     playerHealth.TakeDamage(attackDamage);
+
+    //     // Reset state
+    //     yield return new WaitForSeconds(0.5f);
+    //     agent.isStopped = false;
+    // }
+    public void DealDamage()
     {
-        yield return new WaitForSeconds(delay);
-
-        isAttacking = false;
-        inAttackAnim = false;
+        if (isDead || playerHealth == null)
+            return;
 
         float distance = Vector3.Distance(transform.position, player.position);
 
-        // If player ran away, chase immediately
-        if (distance > attackRange)
+        if (distance <= attackRange + 0.3f)
         {
-            agent.isStopped = false;
-            MoveTowardsPlayer(distance);
+            playerHealth.TakeDamage(attackDamage);
+            Debug.Log("Player hit by enemy attack");
         }
-        else
-        {
-            // Still close stay ready to attack again
-            agent.isStopped = false;
-        }
+        playerHealth.PlayHurtSound();
     }
+
+    // private IEnumerator EndAttackAfterDelay(float delay)
+    // {
+    //     yield return new WaitForSeconds(delay);
+
+    //     isAttacking = false;
+    //     inAttackAnim = false;
+
+    //     float distance = Vector3.Distance(transform.position, player.position);
+
+    //     // If player ran away, chase immediately
+    //     if (distance > attackRange)
+    //     {
+    //         agent.isStopped = false;
+    //         MoveTowardsPlayer(distance);
+    //     }
+    //     else
+    //     {
+    //         // Still close stay ready to attack again
+    //         agent.isStopped = false;
+    //     }
+    // }
 
     public void TakeDamage(float amount)
     {
@@ -244,6 +274,14 @@ public class EnemyAIController : MonoBehaviour
             Rigidbody rb = spawnedLoot.GetComponent<Rigidbody>();
             if (rb != null) rb.isKinematic = false;
         }
+    }
+    public void PlayFootstep()
+    {
+        if (isDead || footstepClips.Length == 0 || footstepSource == null)
+            return;
+
+        AudioClip clip = footstepClips[Random.Range(0, footstepClips.Length)];
+        footstepSource.PlayOneShot(clip, footstepVolume);
     }
     public void SetCurrentHealth(float value)
     {

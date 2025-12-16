@@ -25,6 +25,10 @@ public class HealthManager : MonoBehaviour
 
     private bool isPlayerDead = false; // Flag to prevent Die() from running multiple times
 
+    [Header("Player Hurt Sounds")]
+    public AudioSource hurtAudioSource;
+    public AudioClip[] hurtClips;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -37,6 +41,13 @@ public class HealthManager : MonoBehaviour
             healthBar.maxValue = maxHealth;
             healthBar.value = currentHealth;
         }
+    }
+    public void PlayHurtSound()
+    {
+        if (hurtClips.Length == 0 || hurtAudioSource == null)
+            return;
+
+        hurtAudioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
     }
     private string setHealthText()
     {
@@ -70,6 +81,8 @@ public class HealthManager : MonoBehaviour
     {
         if (isPlayerDead) return; // Ensure this only runs once
         isPlayerDead = true;
+
+        GameManager.Instance.PlayerDied();
 
         Debug.Log("Player has died. Game Over.");
 

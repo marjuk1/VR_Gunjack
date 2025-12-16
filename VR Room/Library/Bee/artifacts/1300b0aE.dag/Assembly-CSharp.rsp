@@ -425,6 +425,7 @@
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/EnemyAIController.cs"
 "Assets/Scripts/FireBulletOnActivate.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/GameMenuManager.cs"
 "Assets/Scripts/Granade.cs"
 "Assets/Scripts/GunReload.cs"

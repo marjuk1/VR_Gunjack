@@ -50,6 +50,9 @@ public class WaveManager : MonoBehaviour
 
     void Update()
     {
+        if (!GameManager.Instance.IsGameActive())
+            return;
+
         waveTimer += Time.deltaTime;
 
         if (!waveInProgress && waveTimer >= waveInterval)
@@ -68,6 +71,7 @@ public class WaveManager : MonoBehaviour
 
         for (int i = 0; i < enemiesToSpawn; i++)
         {
+            if (!GameManager.Instance.IsGameActive()) yield break;
             SpawnEnemy();
             yield return new WaitForSeconds(spawnRate);
         }

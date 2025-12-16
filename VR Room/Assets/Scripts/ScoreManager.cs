@@ -86,6 +86,10 @@ public class ScoreManager : MonoBehaviour
 
     private void TriggerWinCondition()
     {
+        if (hasWon) return;
+        hasWon = true;
+
+        GameManager.Instance.PlayerWon();
         StartCoroutine(FadeWorldToBlack(dimDuration));
 
         if (winScreen != null)
