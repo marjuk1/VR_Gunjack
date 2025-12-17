@@ -287,4 +287,18 @@ public class EnemyAIController : MonoBehaviour
     {
         currentHealth = value;
     }
+    public void OnGameEnded()
+    {
+        if (isDead) return;
+
+        isDead = true;
+
+        if (agent != null)
+            agent.isStopped = true;
+
+        Collider col = GetComponent<Collider>();
+        if (col != null) col.enabled = false;
+
+        Destroy(gameObject); // or animation length
+    }
 }

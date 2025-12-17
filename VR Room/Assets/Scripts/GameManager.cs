@@ -25,7 +25,15 @@ public class GameManager : MonoBehaviour
     public void PlayerWon()
     {
         gameActive = false;
-        Debug.Log("Game Won — stopping gameplay");
+
+        // Kill all enemies
+        EnemyAIController[] enemies = FindObjectsOfType<EnemyAIController>();
+        foreach (var enemy in enemies)
+        {
+            enemy.OnGameEnded();
+        }
+
+        Debug.Log("Player won - enemies cleared");
     }
 
     public bool IsGameActive()

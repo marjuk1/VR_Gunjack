@@ -157,6 +157,7 @@ extern void EnemyAIController_GetAnimationLength_m0D067A2D7A6C59B6609607EAD21414
 extern void EnemyAIController_SpawnLoot_m67A8C9821960305CE3A9D91585A2FE92F1844BA2 (void);
 extern void EnemyAIController_PlayFootstep_m2B237D2AECB86B3B06B8BAAFDAA3F1CE6EAA259E (void);
 extern void EnemyAIController_SetCurrentHealth_m4A114E1D7AF73BA90027B34DEBF469920549C991 (void);
+extern void EnemyAIController_OnGameEnded_mDCE3343F94D89CF4B45FC016A2507D066665A361 (void);
 extern void EnemyAIController__ctor_m9B5894C0A0CAC97762BC133AF2DE14705633437B (void);
 extern void FireBulletOnActivate_Start_m6E58606BCE8940F0CEA4A893AA1E24EFE89DD7BC (void);
 extern void FireBulletOnActivate_Update_m0CFA4AA80E370DB41A85EC002EBB241C26D3BD2C (void);
@@ -895,7 +896,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[897] = 
+static Il2CppMethodPointer s_methodPointers[898] = 
 {
 	SimpleShoot_Start_m49FBE100F02C578F2B3790D8F8C70B6D186C4EAE,
 	SimpleShoot_Update_m9398FE8946B099F32DC83B8F743B14921950B604,
@@ -1042,6 +1043,7 @@ static Il2CppMethodPointer s_methodPointers[897] =
 	EnemyAIController_SpawnLoot_m67A8C9821960305CE3A9D91585A2FE92F1844BA2,
 	EnemyAIController_PlayFootstep_m2B237D2AECB86B3B06B8BAAFDAA3F1CE6EAA259E,
 	EnemyAIController_SetCurrentHealth_m4A114E1D7AF73BA90027B34DEBF469920549C991,
+	EnemyAIController_OnGameEnded_mDCE3343F94D89CF4B45FC016A2507D066665A361,
 	EnemyAIController__ctor_m9B5894C0A0CAC97762BC133AF2DE14705633437B,
 	FireBulletOnActivate_Start_m6E58606BCE8940F0CEA4A893AA1E24EFE89DD7BC,
 	FireBulletOnActivate_Update_m0CFA4AA80E370DB41A85EC002EBB241C26D3BD2C,
@@ -1795,7 +1797,7 @@ static Il2CppMethodPointer s_methodPointers[897] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[897] = 
+static const int32_t s_InvokerIndices[898] = 
 {
 	8073,
 	8073,
@@ -1942,6 +1944,7 @@ static const int32_t s_InvokerIndices[897] =
 	8073,
 	8073,
 	6397,
+	8073,
 	8073,
 	8073,
 	8073,
@@ -2699,8 +2702,8 @@ static const Il2CppTokenRangePair s_rgctxIndices[4] =
 {
 	{ 0x0200007B, { 4, 4 } },
 	{ 0x0200007D, { 12, 4 } },
-	{ 0x06000271, { 0, 4 } },
-	{ 0x0600027E, { 8, 4 } },
+	{ 0x06000272, { 0, 4 } },
+	{ 0x0600027F, { 8, 4 } },
 };
 extern const uint32_t g_rgctx_U3CFadeSequenceU3Ed__6_1_t4A35DCF146DBECAD94EF8A7387C36F37F0B33F14;
 extern const uint32_t g_rgctx_U3CFadeSequenceU3Ed__6_1__ctor_m3707100E3EBBE4291E194D971B25E3873391043F;
@@ -2741,7 +2744,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	897,
+	898,
 	s_methodPointers,
 	0,
 	NULL,
